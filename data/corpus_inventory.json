@@ -1,0 +1,930 @@
+[
+  {
+    "doc_id": "RBI_PDF_001",
+    "filename": "2025-11-28_Master-Direction_13096_Reserve Bank of India (Payments Banks \u2013 Interest Rate on Deposits) Directions, 2025 (Updated as on October 01, 2026).pdf",
+    "path": "data/corpus/2025-11-28_Master-Direction_13096_Reserve Bank of India (Payments Banks \u2013 Interest Rate on Deposits) Directions, 2025 (Updated as on October 01, 2026).pdf",
+    "format": "pdf",
+    "source": "RBI Regulatory Archive (1991-2026)",
+    "size_bytes": 291084,
+    "category": "Digital Banking, FinTech & Cyber Security"
+  },
+  {
+    "doc_id": "RBI_PDF_002",
+    "filename": "2025-11-28_Master-Direction_13097_Reserve Bank of India (Payments Banks \u2013 Prudential Norms on Capital Adequacy) Directions, 2025 (updated as on October 7, 2026).pdf",
+    "path": "data/corpus/2025-11-28_Master-Direction_13097_Reserve Bank of India (Payments Banks \u2013 Prudential Norms on Capital Adequacy) Directions, 2025 (updated as on October 7, 2026).pdf",
+    "format": "pdf",
+    "source": "RBI Regulatory Archive (1991-2026)",
+    "size_bytes": 991063,
+    "category": "Prudential Norms & Capital Adequacy"
+  },
+  {
+    "doc_id": "RBI_PDF_003",
+    "filename": "2026-11-05_Master-Direction_13751_Master Directions on Cyber Resilience and Digital Payment Security Controls for non-bank Payment System Operators.pdf",
+    "path": "data/corpus/2026-11-05_Master-Direction_13751_Master Directions on Cyber Resilience and Digital Payment Security Controls for non-bank Payment System Operators.pdf",
+    "format": "pdf",
+    "source": "RBI Regulatory Archive (1991-2026)",
+    "size_bytes": 383325,
+    "category": "Digital Banking, FinTech & Cyber Security"
+  },
+  {
+    "doc_id": "RBI_PDF_004",
+    "filename": "2024-07-30_Notification_12715_Master Directions on Cyber Resilience and Digital Payment Security Controls for non-bank Payment System Operators.pdf",
+    "path": "data/corpus/2024-07-30_Notification_12715_Master Directions on Cyber Resilience and Digital Payment Security Controls for non-bank Payment System Operators.pdf",
+    "format": "pdf",
+    "source": "RBI Regulatory Archive (1991-2026)",
+    "size_bytes": 1812563,
+    "category": "Digital Banking, FinTech & Cyber Security"
+  },
+  {
+    "doc_id": "RBI_PDF_005",
+    "filename": "2026-11-05_Notification_13751_Master Directions on Cyber Resilience and Digital Payment Security Controls for non-bank Payment System Operators.pdf",
+    "path": "data/corpus/2026-11-05_Notification_13751_Master Directions on Cyber Resilience and Digital Payment Security Controls for non-bank Payment System Operators.pdf",
+    "format": "pdf",
+    "source": "RBI Regulatory Archive (1991-2026)",
+    "size_bytes": 383325,
+    "category": "Digital Banking, FinTech & Cyber Security"
+  },
+  {
+    "doc_id": "RBI_PDF_006",
+    "filename": "2023-06-02_Draft-Notification_55778_RBI invites comments on draft Master Directions on Cyber Resilience and Digital Payment Security Controls for Payment System Operators.pdf",
+    "path": "data/corpus/2023-06-02_Draft-Notification_55778_RBI invites comments on draft Master Directions on Cyber Resilience and Digital Payment Security Controls for Payment System Operators.pdf",
+    "format": "pdf",
+    "source": "RBI Regulatory Archive (1991-2026)",
+    "size_bytes": 318627,
+    "category": "Digital Banking, FinTech & Cyber Security"
+  },
+  {
+    "doc_id": "RBI_PDF_007",
+    "filename": "2023-06-02_Press-Release_55778_RBI invites comments on draft Master Directions on Cyber Resilience and Digital Payment Security Controls for Payment System Operators.pdf",
+    "path": "data/corpus/2023-06-02_Press-Release_55778_RBI invites comments on draft Master Directions on Cyber Resilience and Digital Payment Security Controls for Payment System Operators.pdf",
+    "format": "pdf",
+    "source": "RBI Regulatory Archive (1991-2026)",
+    "size_bytes": 318627,
+    "category": "Digital Banking, FinTech & Cyber Security"
+  },
+  {
+    "doc_id": "RBI_PDF_008",
+    "filename": "2024-01-01_Circular_DCBR.Dir.No.1-13.01.000-2015-16_Master Direction - Reserve Bank of India (Co-operative Banks - Interest Rate on Deposits) Directions, 2016 (Updated as on 01-01-2024).pdf",
+    "path": "data/corpus/2024-01-01_Circular_DCBR.Dir.No.1-13.01.000-2015-16_Master Direction - Reserve Bank of India (Co-operative Banks - Interest Rate on Deposits) Directions, 2016 (Updated as on 01-01-2024).pdf",
+    "format": "pdf",
+    "source": "RBI Regulatory Archive (1991-2026)",
+    "size_bytes": 1271449,
+    "category": "Digital Banking, FinTech & Cyber Security"
+  },
+  {
+    "doc_id": "RBI_PDF_009",
+    "filename": "2024-04-08_Circular_DOR.CAP.REC.No.61-21.01.002-2021-22_Master Direction - Prudential Norms on Capital Adequacy for Local Area Banks (Directions), 2021 (Updated as on 08-04-2024).pdf",
+    "path": "data/corpus/2024-04-08_Circular_DOR.CAP.REC.No.61-21.01.002-2021-22_Master Direction - Prudential Norms on Capital Adequacy for Local Area Banks (Directions), 2021 (Updated as on 08-04-2024).pdf",
+    "format": "pdf",
+    "source": "RBI Regulatory Archive (1991-2026)",
+    "size_bytes": 2720965,
+    "category": "Prudential Norms & Capital Adequacy"
+  },
+  {
+    "doc_id": "RBI_PDF_010",
+    "filename": "2024-06-07_Circular_DBR.Dir.No.84-13.03.00-2015-16_Master Direction - Reserve Bank of India (Interest Rate on Deposits) Directions, 2016 (Updated as on 07-06-2024).pdf",
+    "path": "data/corpus/2024-06-07_Circular_DBR.Dir.No.84-13.03.00-2015-16_Master Direction - Reserve Bank of India (Interest Rate on Deposits) Directions, 2016 (Updated as on 07-06-2024).pdf",
+    "format": "pdf",
+    "source": "RBI Regulatory Archive (1991-2026)",
+    "size_bytes": 1017643,
+    "category": "Digital Banking, FinTech & Cyber Security"
+  },
+  {
+    "doc_id": "RBI_PDF_011",
+    "filename": "2024-06-07_Circular_DoR.SPE.REC.No.24-13.03.00-2024-2025_Amendment to Master Direction - Reserve Bank of India (Interest Rate on Deposits) Directions, 2016.pdf",
+    "path": "data/corpus/2024-06-07_Circular_DoR.SPE.REC.No.24-13.03.00-2024-2025_Amendment to Master Direction - Reserve Bank of India (Interest Rate on Deposits) Directions, 2016.pdf",
+    "format": "pdf",
+    "source": "RBI Regulatory Archive (1991-2026)",
+    "size_bytes": 1340846,
+    "category": "Digital Banking, FinTech & Cyber Security"
+  },
+  {
+    "doc_id": "RBI_PDF_012",
+    "filename": "2024-06-07_Circular_RBI-2024-2025-40 DoR.SPE.REC.No.24-13.03.00-2024-2025_Amendment to Master Direction - Reserve Bank of India (Interest Rate on Deposits) Directions, 2016.pdf",
+    "path": "data/corpus/2024-06-07_Circular_RBI-2024-2025-40 DoR.SPE.REC.No.24-13.03.00-2024-2025_Amendment to Master Direction - Reserve Bank of India (Interest Rate on Deposits) Directions, 2016.pdf",
+    "format": "pdf",
+    "source": "RBI Regulatory Archive (1991-2026)",
+    "size_bytes": 1340846,
+    "category": "Digital Banking, FinTech & Cyber Security"
+  },
+  {
+    "doc_id": "RBI_PDF_013",
+    "filename": "2024-06-21_Circular_RBI-2024-2025-44 FIDD.CO.PSD.BC.No.7-04.09.01-2024-25_Priority Sector Lending \u2013 Amendments to the Master Directions.pdf",
+    "path": "data/corpus/2024-06-21_Circular_RBI-2024-2025-44 FIDD.CO.PSD.BC.No.7-04.09.01-2024-25_Priority Sector Lending \u2013 Amendments to the Master Directions.pdf",
+    "format": "pdf",
+    "source": "RBI Regulatory Archive (1991-2026)",
+    "size_bytes": 342539,
+    "category": "Digital Banking, FinTech & Cyber Security"
+  },
+  {
+    "doc_id": "RBI_PDF_014",
+    "filename": "2024-07-15_Circular_DOS.CO.FMG.SEC.No.7-23.04.001-2024-25_Master Directions on Fraud Risk Management in Non-Banking Financial Companies (NBFCs) (including Housing Finance Companies).pdf",
+    "path": "data/corpus/2024-07-15_Circular_DOS.CO.FMG.SEC.No.7-23.04.001-2024-25_Master Directions on Fraud Risk Management in Non-Banking Financial Companies (NBFCs) (including Housing Finance Companies).pdf",
+    "format": "pdf",
+    "source": "RBI Regulatory Archive (1991-2026)",
+    "size_bytes": 1640855,
+    "category": "Non-Banking Financial Companies (NBFCs)"
+  },
+  {
+    "doc_id": "RBI_PDF_015",
+    "filename": "2025-02-17_Circular_DoR.FIN.REC.40-01.02.000-2023-24_Master Direction - Reserve Bank of India (Prudential Regulations on Basel III Capital Framework, Exposure Norms, Significant Investments, Class.pdf",
+    "path": "data/corpus/2025-02-17_Circular_DoR.FIN.REC.40-01.02.000-2023-24_Master Direction - Reserve Bank of India (Prudential Regulations on Basel III Capital Framework, Exposure Norms, Significant Investments, Class.pdf",
+    "format": "pdf",
+    "source": "RBI Regulatory Archive (1991-2026)",
+    "size_bytes": 5101582,
+    "category": "Prudential Norms & Capital Adequacy"
+  },
+  {
+    "doc_id": "RBI_PDF_016",
+    "filename": "2025-03-25_Circular_DOR.CAP.REC.No.70-21.06.201-2024-25_Master Direction - Reserve Bank of India (Prudential Norms on Capital Adequacy for Regional Rural Banks) Directions, 2025.pdf",
+    "path": "data/corpus/2025-03-25_Circular_DOR.CAP.REC.No.70-21.06.201-2024-25_Master Direction - Reserve Bank of India (Prudential Norms on Capital Adequacy for Regional Rural Banks) Directions, 2025.pdf",
+    "format": "pdf",
+    "source": "RBI Regulatory Archive (1991-2026)",
+    "size_bytes": 1254543,
+    "category": "Prudential Norms & Capital Adequacy"
+  },
+  {
+    "doc_id": "RBI_PDF_017",
+    "filename": "2025-04-01_Circular_DOR.SOG(SPE).REC.8-13.03.00-2025-26_Master Direction - Reserve Bank of India (Interest Rate on Deposits) Directions, 2025.pdf",
+    "path": "data/corpus/2025-04-01_Circular_DOR.SOG(SPE).REC.8-13.03.00-2025-26_Master Direction - Reserve Bank of India (Interest Rate on Deposits) Directions, 2025.pdf",
+    "format": "pdf",
+    "source": "RBI Regulatory Archive (1991-2026)",
+    "size_bytes": 900287,
+    "category": "Digital Banking, FinTech & Cyber Security"
+  },
+  {
+    "doc_id": "RBI_PDF_018",
+    "filename": "2025-04-01_Circular_RBI-2025-26-134 DOR.SOG(SPE).REC. 8-13.03.00-2025-26_Master Direction - Reserve Bank of India (Interest Rate on Deposits) Directions, 2025.pdf",
+    "path": "data/corpus/2025-04-01_Circular_RBI-2025-26-134 DOR.SOG(SPE).REC. 8-13.03.00-2025-26_Master Direction - Reserve Bank of India (Interest Rate on Deposits) Directions, 2025.pdf",
+    "format": "pdf",
+    "source": "RBI Regulatory Archive (1991-2026)",
+    "size_bytes": 900287,
+    "category": "Digital Banking, FinTech & Cyber Security"
+  },
+  {
+    "doc_id": "RBI_PDF_019",
+    "filename": "2026-03-10_Circular_RBI-2025-2026-240 DOR.MRG.REC.No.435-21-01-002-2025-26_Reserve Bank of India (Payments Banks - Prudential Norms on Capital Adequacy) Amendment Directions, 2026.pdf",
+    "path": "data/corpus/2026-03-10_Circular_RBI-2025-2026-240 DOR.MRG.REC.No.435-21-01-002-2025-26_Reserve Bank of India (Payments Banks - Prudential Norms on Capital Adequacy) Amendment Directions, 2026.pdf",
+    "format": "pdf",
+    "source": "RBI Regulatory Archive (1991-2026)",
+    "size_bytes": 322179,
+    "category": "Prudential Norms & Capital Adequacy"
+  },
+  {
+    "doc_id": "RBI_PDF_020",
+    "filename": "2026-05-08_Circular_RBI-2026-2027-81 DOR.CAP.REC.No.70-21.01.002-2026-27_Reserve Bank of India (Payments Banks - Prudential Norms on Capital Adequacy) Second Amendment Directions, 2026.pdf",
+    "path": "data/corpus/2026-05-08_Circular_RBI-2026-2027-81 DOR.CAP.REC.No.70-21.01.002-2026-27_Reserve Bank of India (Payments Banks - Prudential Norms on Capital Adequacy) Second Amendment Directions, 2026.pdf",
+    "format": "pdf",
+    "source": "RBI Regulatory Archive (1991-2026)",
+    "size_bytes": 317893,
+    "category": "Prudential Norms & Capital Adequacy"
+  },
+  {
+    "doc_id": "RBI_PDF_021",
+    "filename": "2026-07-30_Circular_RBI-2026-2027-217 DOR.SOG(SPE).REC.179-13.03.00- 2026-27_Reserve Bank of India (Payments Banks \u2013 Interest Rate on Deposits) Amendment Directions, 2026.pdf",
+    "path": "data/corpus/2026-07-30_Circular_RBI-2026-2027-217 DOR.SOG(SPE).REC.179-13.03.00- 2026-27_Reserve Bank of India (Payments Banks \u2013 Interest Rate on Deposits) Amendment Directions, 2026.pdf",
+    "format": "pdf",
+    "source": "RBI Regulatory Archive (1991-2026)",
+    "size_bytes": 229851,
+    "category": "Digital Banking, FinTech & Cyber Security"
+  },
+  {
+    "doc_id": "RBI_PDF_022",
+    "filename": "2026-10-07_Circular_RBI-2026-2027-288 DOR.MRG.REC.No.244-00-00-001-2026-27_Reserve Bank of India (Payments Banks \u2013 Prudential Norms on Capital Adequacy) Third Amendment Directions, 2026.pdf",
+    "path": "data/corpus/2026-10-07_Circular_RBI-2026-2027-288 DOR.MRG.REC.No.244-00-00-001-2026-27_Reserve Bank of India (Payments Banks \u2013 Prudential Norms on Capital Adequacy) Third Amendment Directions, 2026.pdf",
+    "format": "pdf",
+    "source": "RBI Regulatory Archive (1991-2026)",
+    "size_bytes": 230548,
+    "category": "Prudential Norms & Capital Adequacy"
+  },
+  {
+    "doc_id": "RBI_PDF_023",
+    "filename": "2025-10-10_Draft-Notification_108_Reserve Bank of India (Payments Banks \u2013 Prudential Norms on Capital Adequacy) Directions, 2025.pdf",
+    "path": "data/corpus/2025-10-10_Draft-Notification_108_Reserve Bank of India (Payments Banks \u2013 Prudential Norms on Capital Adequacy) Directions, 2025.pdf",
+    "format": "pdf",
+    "source": "RBI Regulatory Archive (1991-2026)",
+    "size_bytes": 647532,
+    "category": "Prudential Norms & Capital Adequacy"
+  },
+  {
+    "doc_id": "RBI_PDF_024",
+    "filename": "2025-10-10_Draft-Notification_110_Reserve Bank of India (Payments Banks \u2013 Interest Rate on Deposits) Directions, 2025.pdf",
+    "path": "data/corpus/2025-10-10_Draft-Notification_110_Reserve Bank of India (Payments Banks \u2013 Interest Rate on Deposits) Directions, 2025.pdf",
+    "format": "pdf",
+    "source": "RBI Regulatory Archive (1991-2026)",
+    "size_bytes": 220264,
+    "category": "Digital Banking, FinTech & Cyber Security"
+  },
+  {
+    "doc_id": "RBI_PDF_025",
+    "filename": "2025-03-24_Master-Direction_12799_Master Directions - Reserve Bank of India (Priority Sector Lending \u2013 Targets and Classification) Directions, 2025 ( Updated as on September 11, 2026 ).pdf",
+    "path": "data/corpus/2025-03-24_Master-Direction_12799_Master Directions - Reserve Bank of India (Priority Sector Lending \u2013 Targets and Classification) Directions, 2025 ( Updated as on September 11, 2026 ).pdf",
+    "format": "pdf",
+    "source": "RBI Regulatory Archive (1991-2026)",
+    "size_bytes": 837367,
+    "category": "Digital Banking, FinTech & Cyber Security"
+  },
+  {
+    "doc_id": "RBI_PDF_026",
+    "filename": "2025-09-25_Master-Direction_12898_Reserve Bank of India (Authentication mechanisms for digital payment transactions) Directions, 2025.pdf",
+    "path": "data/corpus/2025-09-25_Master-Direction_12898_Reserve Bank of India (Authentication mechanisms for digital payment transactions) Directions, 2025.pdf",
+    "format": "pdf",
+    "source": "RBI Regulatory Archive (1991-2026)",
+    "size_bytes": 271738,
+    "category": "Digital Banking, FinTech & Cyber Security"
+  },
+  {
+    "doc_id": "RBI_PDF_027",
+    "filename": "2025-11-28_Master-Direction_12959_Reserve Bank of India (Non-Banking Financial Companies \u2013 Prudential Norms on Capital Adequacy) Directions, 2025 (Updated as on July 01, 2026).pdf",
+    "path": "data/corpus/2025-11-28_Master-Direction_12959_Reserve Bank of India (Non-Banking Financial Companies \u2013 Prudential Norms on Capital Adequacy) Directions, 2025 (Updated as on July 01, 2026).pdf",
+    "format": "pdf",
+    "source": "RBI Regulatory Archive (1991-2026)",
+    "size_bytes": 672123,
+    "category": "Prudential Norms & Capital Adequacy"
+  },
+  {
+    "doc_id": "RBI_PDF_028",
+    "filename": "2025-11-28_Master-Direction_12983_Reserve Bank of India (All India Financial Institutions - Prudential Norms on Capital Adequacy) Directions, 2025 (Updated as on October 07, 2026).pdf",
+    "path": "data/corpus/2025-11-28_Master-Direction_12983_Reserve Bank of India (All India Financial Institutions - Prudential Norms on Capital Adequacy) Directions, 2025 (Updated as on October 07, 2026).pdf",
+    "format": "pdf",
+    "source": "RBI Regulatory Archive (1991-2026)",
+    "size_bytes": 2326099,
+    "category": "Prudential Norms & Capital Adequacy"
+  },
+  {
+    "doc_id": "RBI_PDF_029",
+    "filename": "2025-11-28_Master-Direction_13003_Reserve Bank of India (Rural Co-operative Banks \u2013 Interest Rate on Deposits) Directions, 2025 (Updated as on August 25, 2026).pdf",
+    "path": "data/corpus/2025-11-28_Master-Direction_13003_Reserve Bank of India (Rural Co-operative Banks \u2013 Interest Rate on Deposits) Directions, 2025 (Updated as on August 25, 2026).pdf",
+    "format": "pdf",
+    "source": "RBI Regulatory Archive (1991-2026)",
+    "size_bytes": 385184,
+    "category": "Digital Banking, FinTech & Cyber Security"
+  },
+  {
+    "doc_id": "RBI_PDF_030",
+    "filename": "2025-11-28_Master-Direction_13004_Reserve Bank of India (Rural Co-operative Banks \u2013 Prudential Norms on Capital Adequacy) Directions, 2025 (Updated as on May 15, 2026).pdf",
+    "path": "data/corpus/2025-11-28_Master-Direction_13004_Reserve Bank of India (Rural Co-operative Banks \u2013 Prudential Norms on Capital Adequacy) Directions, 2025 (Updated as on May 15, 2026).pdf",
+    "format": "pdf",
+    "source": "RBI Regulatory Archive (1991-2026)",
+    "size_bytes": 559954,
+    "category": "Prudential Norms & Capital Adequacy"
+  },
+  {
+    "doc_id": "RBI_PDF_031",
+    "filename": "2025-11-28_Master-Direction_13029_Reserve Bank of India (Urban Co-operative Banks \u2013 Interest Rate on Deposits) Directions, 2025 (Updated as on October 01, 2026).pdf",
+    "path": "data/corpus/2025-11-28_Master-Direction_13029_Reserve Bank of India (Urban Co-operative Banks \u2013 Interest Rate on Deposits) Directions, 2025 (Updated as on October 01, 2026).pdf",
+    "format": "pdf",
+    "source": "RBI Regulatory Archive (1991-2026)",
+    "size_bytes": 352133,
+    "category": "Digital Banking, FinTech & Cyber Security"
+  },
+  {
+    "doc_id": "RBI_PDF_032",
+    "filename": "2025-11-28_Master-Direction_13030_Reserve Bank of India (Urban Co-operative Banks - Prudential Norms on Capital Adequacy) Directions, 2025 (Updated as on June 16, 2026).pdf",
+    "path": "data/corpus/2025-11-28_Master-Direction_13030_Reserve Bank of India (Urban Co-operative Banks - Prudential Norms on Capital Adequacy) Directions, 2025 (Updated as on June 16, 2026).pdf",
+    "format": "pdf",
+    "source": "RBI Regulatory Archive (1991-2026)",
+    "size_bytes": 913212,
+    "category": "Prudential Norms & Capital Adequacy"
+  },
+  {
+    "doc_id": "RBI_PDF_033",
+    "filename": "2025-11-28_Master-Direction_13054_Reserve Bank of India (Regional Rural Banks \u2013 Interest Rate on Deposits) Directions, 2025 (Updated as on October 01, 2026).pdf",
+    "path": "data/corpus/2025-11-28_Master-Direction_13054_Reserve Bank of India (Regional Rural Banks \u2013 Interest Rate on Deposits) Directions, 2025 (Updated as on October 01, 2026).pdf",
+    "format": "pdf",
+    "source": "RBI Regulatory Archive (1991-2026)",
+    "size_bytes": 373126,
+    "category": "Digital Banking, FinTech & Cyber Security"
+  },
+  {
+    "doc_id": "RBI_PDF_034",
+    "filename": "2025-11-28_Master-Direction_13055_Reserve Bank of India (Regional Rural Banks - Prudential Norms on Capital Adequacy) Directions, 2025 (Updated as on June 16, 2026).pdf",
+    "path": "data/corpus/2025-11-28_Master-Direction_13055_Reserve Bank of India (Regional Rural Banks - Prudential Norms on Capital Adequacy) Directions, 2025 (Updated as on June 16, 2026).pdf",
+    "format": "pdf",
+    "source": "RBI Regulatory Archive (1991-2026)",
+    "size_bytes": 524491,
+    "category": "Prudential Norms & Capital Adequacy"
+  },
+  {
+    "doc_id": "RBI_PDF_035",
+    "filename": "2025-11-28_Master-Direction_13079_Reserve Bank of India (Local Area Banks \u2013 Interest Rate on Deposits) Directions, 2025 (Updated as on October 01, 2026).pdf",
+    "path": "data/corpus/2025-11-28_Master-Direction_13079_Reserve Bank of India (Local Area Banks \u2013 Interest Rate on Deposits) Directions, 2025 (Updated as on October 01, 2026).pdf",
+    "format": "pdf",
+    "source": "RBI Regulatory Archive (1991-2026)",
+    "size_bytes": 396410,
+    "category": "Digital Banking, FinTech & Cyber Security"
+  },
+  {
+    "doc_id": "RBI_PDF_036",
+    "filename": "2025-11-28_Master-Direction_13080_Reserve Bank of India (Local Area Banks \u2013 Prudential Norms on Capital Adequacy) Directions, 2025.pdf",
+    "path": "data/corpus/2025-11-28_Master-Direction_13080_Reserve Bank of India (Local Area Banks \u2013 Prudential Norms on Capital Adequacy) Directions, 2025.pdf",
+    "format": "pdf",
+    "source": "RBI Regulatory Archive (1991-2026)",
+    "size_bytes": 812105,
+    "category": "Prudential Norms & Capital Adequacy"
+  },
+  {
+    "doc_id": "RBI_PDF_037",
+    "filename": "2025-11-28_Master-Direction_13093_Reserve Bank of India (Payments Banks \u2013 Asset Liability Management) Directions, 2025.pdf",
+    "path": "data/corpus/2025-11-28_Master-Direction_13093_Reserve Bank of India (Payments Banks \u2013 Asset Liability Management) Directions, 2025.pdf",
+    "format": "pdf",
+    "source": "RBI Regulatory Archive (1991-2026)",
+    "size_bytes": 1095770,
+    "category": "Digital Banking, FinTech & Cyber Security"
+  },
+  {
+    "doc_id": "RBI_PDF_038",
+    "filename": "2025-11-28_Master-Direction_13095_Reserve Bank of India (Payments Banks \u2013 Debit Cards- Issuance and Conduct) Directions, 2025 (Updated as on October 1, 2026).pdf",
+    "path": "data/corpus/2025-11-28_Master-Direction_13095_Reserve Bank of India (Payments Banks \u2013 Debit Cards- Issuance and Conduct) Directions, 2025 (Updated as on October 1, 2026).pdf",
+    "format": "pdf",
+    "source": "RBI Regulatory Archive (1991-2026)",
+    "size_bytes": 310545,
+    "category": "Prudential Norms & Capital Adequacy"
+  },
+  {
+    "doc_id": "RBI_PDF_039",
+    "filename": "2025-11-28_Master-Direction_13098_Reserve Bank of India (Payments Banks \u2013 Cash Reserve Ratio and Statutory Liquidity Ratio) Directions, 2025 (Updated as on October 09, 2026).pdf",
+    "path": "data/corpus/2025-11-28_Master-Direction_13098_Reserve Bank of India (Payments Banks \u2013 Cash Reserve Ratio and Statutory Liquidity Ratio) Directions, 2025 (Updated as on October 09, 2026).pdf",
+    "format": "pdf",
+    "source": "RBI Regulatory Archive (1991-2026)",
+    "size_bytes": 576747,
+    "category": "Digital Banking, FinTech & Cyber Security"
+  },
+  {
+    "doc_id": "RBI_PDF_040",
+    "filename": "2025-11-28_Master-Direction_13099_Reserve Bank of India (Payments Banks - Governance) Directions, 2025 (Updated as on October 01, 2026).pdf",
+    "path": "data/corpus/2025-11-28_Master-Direction_13099_Reserve Bank of India (Payments Banks - Governance) Directions, 2025 (Updated as on October 01, 2026).pdf",
+    "format": "pdf",
+    "source": "RBI Regulatory Archive (1991-2026)",
+    "size_bytes": 593356,
+    "category": "Payment & Settlement Systems"
+  },
+  {
+    "doc_id": "RBI_PDF_041",
+    "filename": "2025-11-28_Master-Direction_13101_Reserve Bank of India (Payments Banks \u2013 Digital Banking Channels Authorisation) Directions, 2025.pdf",
+    "path": "data/corpus/2025-11-28_Master-Direction_13101_Reserve Bank of India (Payments Banks \u2013 Digital Banking Channels Authorisation) Directions, 2025.pdf",
+    "format": "pdf",
+    "source": "RBI Regulatory Archive (1991-2026)",
+    "size_bytes": 224760,
+    "category": "Digital Banking, FinTech & Cyber Security"
+  },
+  {
+    "doc_id": "RBI_PDF_042",
+    "filename": "2025-11-28_Master-Direction_13125_Reserve Bank of India (Small Finance Banks \u2013 Interest Rate on Deposits) Directions, 2025 (Updated as on October 01, 2026).pdf",
+    "path": "data/corpus/2025-11-28_Master-Direction_13125_Reserve Bank of India (Small Finance Banks \u2013 Interest Rate on Deposits) Directions, 2025 (Updated as on October 01, 2026).pdf",
+    "format": "pdf",
+    "source": "RBI Regulatory Archive (1991-2026)",
+    "size_bytes": 387598,
+    "category": "Digital Banking, FinTech & Cyber Security"
+  },
+  {
+    "doc_id": "RBI_PDF_043",
+    "filename": "2025-11-28_Master-Direction_13127_Reserve Bank of India (Small Finance Banks \u2013 Prudential Norms on Capital Adequacy) Directions, 2025 (Updated as on October 7, 2026).pdf",
+    "path": "data/corpus/2025-11-28_Master-Direction_13127_Reserve Bank of India (Small Finance Banks \u2013 Prudential Norms on Capital Adequacy) Directions, 2025 (Updated as on October 7, 2026).pdf",
+    "format": "pdf",
+    "source": "RBI Regulatory Archive (1991-2026)",
+    "size_bytes": 2117313,
+    "category": "Prudential Norms & Capital Adequacy"
+  },
+  {
+    "doc_id": "RBI_PDF_044",
+    "filename": "2025-11-28_Master-Direction_13157_Reserve Bank of India (Commercial Banks \u2013 Interest Rate on Deposits) Directions, 2025 (Updated as on October 01, 2026).pdf",
+    "path": "data/corpus/2025-11-28_Master-Direction_13157_Reserve Bank of India (Commercial Banks \u2013 Interest Rate on Deposits) Directions, 2025 (Updated as on October 01, 2026).pdf",
+    "format": "pdf",
+    "source": "RBI Regulatory Archive (1991-2026)",
+    "size_bytes": 437522,
+    "category": "Digital Banking, FinTech & Cyber Security"
+  },
+  {
+    "doc_id": "RBI_PDF_045",
+    "filename": "2025-11-28_Master-Direction_13159_Reserve Bank of India (Commercial Banks - Prudential Norms on Capital Adequacy) Directions, 2025 (Updated as on October 07, 2026).pdf",
+    "path": "data/corpus/2025-11-28_Master-Direction_13159_Reserve Bank of India (Commercial Banks - Prudential Norms on Capital Adequacy) Directions, 2025 (Updated as on October 07, 2026).pdf",
+    "format": "pdf",
+    "source": "RBI Regulatory Archive (1991-2026)",
+    "size_bytes": 1999010,
+    "category": "Prudential Norms & Capital Adequacy"
+  },
+  {
+    "doc_id": "RBI_PDF_046",
+    "filename": "2026-03-10_Master-Direction_13321_Reserve Bank of India (Payments Banks \u2013 Prudential Norms on Declaration of Dividend) Directions, 2026.pdf",
+    "path": "data/corpus/2026-03-10_Master-Direction_13321_Reserve Bank of India (Payments Banks \u2013 Prudential Norms on Declaration of Dividend) Directions, 2026.pdf",
+    "format": "pdf",
+    "source": "RBI Regulatory Archive (1991-2026)",
+    "size_bytes": 414440,
+    "category": "Payment & Settlement Systems"
+  },
+  {
+    "doc_id": "RBI_PDF_047",
+    "filename": "2026-04-21_Master-Direction_13374_Digital Payments \u2013 E-mandate Framework, 2026.pdf",
+    "path": "data/corpus/2026-04-21_Master-Direction_13374_Digital Payments \u2013 E-mandate Framework, 2026.pdf",
+    "format": "pdf",
+    "source": "RBI Regulatory Archive (1991-2026)",
+    "size_bytes": 248167,
+    "category": "Digital Banking, FinTech & Cyber Security"
+  },
+  {
+    "doc_id": "RBI_PDF_048",
+    "filename": "2026-07-31_Master-Direction_13591_Reserve Bank of India (Non-Banking Financial Companies \u2013 Digital Payment Security Controls) Directions, 2026.pdf",
+    "path": "data/corpus/2026-07-31_Master-Direction_13591_Reserve Bank of India (Non-Banking Financial Companies \u2013 Digital Payment Security Controls) Directions, 2026.pdf",
+    "format": "pdf",
+    "source": "RBI Regulatory Archive (1991-2026)",
+    "size_bytes": 423239,
+    "category": "Digital Banking, FinTech & Cyber Security"
+  },
+  {
+    "doc_id": "RBI_PDF_049",
+    "filename": "2026-07-31_Master-Direction_13615_Reserve Bank of India (Urban Co-operative Banks \u2013 Digital Payment Security Controls) Directions, 2026.pdf",
+    "path": "data/corpus/2026-07-31_Master-Direction_13615_Reserve Bank of India (Urban Co-operative Banks \u2013 Digital Payment Security Controls) Directions, 2026.pdf",
+    "format": "pdf",
+    "source": "RBI Regulatory Archive (1991-2026)",
+    "size_bytes": 450551,
+    "category": "Digital Banking, FinTech & Cyber Security"
+  },
+  {
+    "doc_id": "RBI_PDF_050",
+    "filename": "2026-07-31_Master-Direction_13624_Reserve Bank of India (Payments Banks \u2013 Digital Payment Security Controls) Directions, 2026 (Updated as on October 01, 2026).pdf",
+    "path": "data/corpus/2026-07-31_Master-Direction_13624_Reserve Bank of India (Payments Banks \u2013 Digital Payment Security Controls) Directions, 2026 (Updated as on October 01, 2026).pdf",
+    "format": "pdf",
+    "source": "RBI Regulatory Archive (1991-2026)",
+    "size_bytes": 426975,
+    "category": "Digital Banking, FinTech & Cyber Security"
+  },
+  {
+    "doc_id": "RBI_PDF_051",
+    "filename": "2026-07-31_Master-Direction_13625_Reserve Bank of India (Payments Banks - Cybersecurity, Technology- Risk, Resilience and Assurance Framework) Directions, 2026 (Updated as on October 01, 2026).pdf",
+    "path": "data/corpus/2026-07-31_Master-Direction_13625_Reserve Bank of India (Payments Banks - Cybersecurity, Technology- Risk, Resilience and Assurance Framework) Directions, 2026 (Updated as on October 01, 2026).pdf",
+    "format": "pdf",
+    "source": "RBI Regulatory Archive (1991-2026)",
+    "size_bytes": 490320,
+    "category": "Digital Banking, FinTech & Cyber Security"
+  },
+  {
+    "doc_id": "RBI_PDF_052",
+    "filename": "2026-07-31_Master-Direction_13633_Reserve Bank of India (Small Finance Banks \u2013 Digital Payment Security Controls) Directions, 2026 (Updated as on October 01, 2026).pdf",
+    "path": "data/corpus/2026-07-31_Master-Direction_13633_Reserve Bank of India (Small Finance Banks \u2013 Digital Payment Security Controls) Directions, 2026 (Updated as on October 01, 2026).pdf",
+    "format": "pdf",
+    "source": "RBI Regulatory Archive (1991-2026)",
+    "size_bytes": 389768,
+    "category": "Digital Banking, FinTech & Cyber Security"
+  },
+  {
+    "doc_id": "RBI_PDF_053",
+    "filename": "2026-07-31_Master-Direction_13642_Reserve Bank of India (Commercial Banks \u2013 Digital Payment Security Controls) Directions, 2026 (Updated as on October 01, 2026).pdf",
+    "path": "data/corpus/2026-07-31_Master-Direction_13642_Reserve Bank of India (Commercial Banks \u2013 Digital Payment Security Controls) Directions, 2026 (Updated as on October 01, 2026).pdf",
+    "format": "pdf",
+    "source": "RBI Regulatory Archive (1991-2026)",
+    "size_bytes": 415113,
+    "category": "Digital Banking, FinTech & Cyber Security"
+  },
+  {
+    "doc_id": "RBI_PDF_054",
+    "filename": "2024-01-01_Notification_10394_Master Direction - Reserve Bank of India (Co-operative Banks - Interest Rate on Deposits) Directions, 2016 (Updated as on January 01, 2024).pdf",
+    "path": "data/corpus/2024-01-01_Notification_10394_Master Direction - Reserve Bank of India (Co-operative Banks - Interest Rate on Deposits) Directions, 2016 (Updated as on January 01, 2024).pdf",
+    "format": "pdf",
+    "source": "RBI Regulatory Archive (1991-2026)",
+    "size_bytes": 1271449,
+    "category": "Digital Banking, FinTech & Cyber Security"
+  },
+  {
+    "doc_id": "RBI_PDF_055",
+    "filename": "2024-06-21_Notification_12694_Priority Sector Lending \u2013 Amendments to the Master Directions.pdf",
+    "path": "data/corpus/2024-06-21_Notification_12694_Priority Sector Lending \u2013 Amendments to the Master Directions.pdf",
+    "format": "pdf",
+    "source": "RBI Regulatory Archive (1991-2026)",
+    "size_bytes": 342539,
+    "category": "Digital Banking, FinTech & Cyber Security"
+  },
+  {
+    "doc_id": "RBI_PDF_056",
+    "filename": "2025-03-24_Notification_12799_Master Directions - Reserve Bank of India (Priority Sector Lending \u2013 Targets and Classification) Directions, 2025 ( Updated as on September 11, 2026 ).pdf",
+    "path": "data/corpus/2025-03-24_Notification_12799_Master Directions - Reserve Bank of India (Priority Sector Lending \u2013 Targets and Classification) Directions, 2025 ( Updated as on September 11, 2026 ).pdf",
+    "format": "pdf",
+    "source": "RBI Regulatory Archive (1991-2026)",
+    "size_bytes": 837367,
+    "category": "Digital Banking, FinTech & Cyber Security"
+  },
+  {
+    "doc_id": "RBI_PDF_057",
+    "filename": "2025-11-28_Notification_13096_Reserve Bank of India (Payments Banks \u2013 Interest Rate on Deposits) Directions, 2025 (Updated as on October 01, 2026).pdf",
+    "path": "data/corpus/2025-11-28_Notification_13096_Reserve Bank of India (Payments Banks \u2013 Interest Rate on Deposits) Directions, 2025 (Updated as on October 01, 2026).pdf",
+    "format": "pdf",
+    "source": "RBI Regulatory Archive (1991-2026)",
+    "size_bytes": 291084,
+    "category": "Digital Banking, FinTech & Cyber Security"
+  },
+  {
+    "doc_id": "RBI_PDF_058",
+    "filename": "2025-11-28_Notification_13097_Reserve Bank of India (Payments Banks \u2013 Prudential Norms on Capital Adequacy) Directions, 2025 (updated as on October 7, 2026).pdf",
+    "path": "data/corpus/2025-11-28_Notification_13097_Reserve Bank of India (Payments Banks \u2013 Prudential Norms on Capital Adequacy) Directions, 2025 (updated as on October 7, 2026).pdf",
+    "format": "pdf",
+    "source": "RBI Regulatory Archive (1991-2026)",
+    "size_bytes": 991063,
+    "category": "Prudential Norms & Capital Adequacy"
+  },
+  {
+    "doc_id": "RBI_PDF_059",
+    "filename": "2026-03-10_Notification_13330_Reserve Bank of India (Payments Banks - Prudential Norms on Capital Adequacy) Amendment Directions, 2026.pdf",
+    "path": "data/corpus/2026-03-10_Notification_13330_Reserve Bank of India (Payments Banks - Prudential Norms on Capital Adequacy) Amendment Directions, 2026.pdf",
+    "format": "pdf",
+    "source": "RBI Regulatory Archive (1991-2026)",
+    "size_bytes": 322179,
+    "category": "Prudential Norms & Capital Adequacy"
+  },
+  {
+    "doc_id": "RBI_PDF_060",
+    "filename": "2026-05-08_Notification_13448_Reserve Bank of India (Payments Banks - Prudential Norms on Capital Adequacy) Second Amendment Directions, 2026.pdf",
+    "path": "data/corpus/2026-05-08_Notification_13448_Reserve Bank of India (Payments Banks - Prudential Norms on Capital Adequacy) Second Amendment Directions, 2026.pdf",
+    "format": "pdf",
+    "source": "RBI Regulatory Archive (1991-2026)",
+    "size_bytes": 317893,
+    "category": "Prudential Norms & Capital Adequacy"
+  },
+  {
+    "doc_id": "RBI_PDF_061",
+    "filename": "2026-07-30_Notification_13659_Reserve Bank of India (Payments Banks \u2013 Interest Rate on Deposits) Amendment Directions, 2026.pdf",
+    "path": "data/corpus/2026-07-30_Notification_13659_Reserve Bank of India (Payments Banks \u2013 Interest Rate on Deposits) Amendment Directions, 2026.pdf",
+    "format": "pdf",
+    "source": "RBI Regulatory Archive (1991-2026)",
+    "size_bytes": 229851,
+    "category": "Digital Banking, FinTech & Cyber Security"
+  },
+  {
+    "doc_id": "RBI_PDF_062",
+    "filename": "2026-10-07_Notification_13734_Reserve Bank of India (Payments Banks \u2013 Prudential Norms on Capital Adequacy) Third Amendment Directions, 2026.pdf",
+    "path": "data/corpus/2026-10-07_Notification_13734_Reserve Bank of India (Payments Banks \u2013 Prudential Norms on Capital Adequacy) Third Amendment Directions, 2026.pdf",
+    "format": "pdf",
+    "source": "RBI Regulatory Archive (1991-2026)",
+    "size_bytes": 230548,
+    "category": "Prudential Norms & Capital Adequacy"
+  },
+  {
+    "doc_id": "RBI_PDF_063",
+    "filename": "2020-05-19_Circular_RBI-2019-2020-235 DOR.NBFC (HFC).CC.No.111-03.10.136-2019-20_Extending Master Direction \u2013 Know Your Customer (KYC) Direction, 2016 to Housing Finance Companies.pdf",
+    "path": "data/corpus/2020-05-19_Circular_RBI-2019-2020-235 DOR.NBFC (HFC).CC.No.111-03.10.136-2019-20_Extending Master Direction \u2013 Know Your Customer (KYC) Direction, 2016 to Housing Finance Companies.pdf",
+    "format": "pdf",
+    "source": "RBI Regulatory Archive (1991-2026)",
+    "size_bytes": 247192,
+    "category": "Non-Banking Financial Companies (NBFCs)"
+  },
+  {
+    "doc_id": "RBI_PDF_064",
+    "filename": "2023-10-26_Circular_DOR.SPE.REC.No.51-13.03.000-2023-24_Non-Callable Deposits - Master Direction on Interest Rate on Deposits.pdf",
+    "path": "data/corpus/2023-10-26_Circular_DOR.SPE.REC.No.51-13.03.000-2023-24_Non-Callable Deposits - Master Direction on Interest Rate on Deposits.pdf",
+    "format": "pdf",
+    "source": "RBI Regulatory Archive (1991-2026)",
+    "size_bytes": 1048370,
+    "category": "Digital Banking, FinTech & Cyber Security"
+  },
+  {
+    "doc_id": "RBI_PDF_065",
+    "filename": "2023-10-26_Circular_RBI-2023-2024-74 DOR.SPE. REC. No 51-13.03.000-2023-24_Non-Callable Deposits - Master Direction on Interest Rate on Deposits.pdf",
+    "path": "data/corpus/2023-10-26_Circular_RBI-2023-2024-74 DOR.SPE. REC. No 51-13.03.000-2023-24_Non-Callable Deposits - Master Direction on Interest Rate on Deposits.pdf",
+    "format": "pdf",
+    "source": "RBI Regulatory Archive (1991-2026)",
+    "size_bytes": 1048370,
+    "category": "Digital Banking, FinTech & Cyber Security"
+  },
+  {
+    "doc_id": "RBI_PDF_066",
+    "filename": "2024-01-04_Circular_DOR.AML.REC.66-14.01.001-2023-24_Amendment to the Master Direction (MD) on KYC.pdf",
+    "path": "data/corpus/2024-01-04_Circular_DOR.AML.REC.66-14.01.001-2023-24_Amendment to the Master Direction (MD) on KYC.pdf",
+    "format": "pdf",
+    "source": "RBI Regulatory Archive (1991-2026)",
+    "size_bytes": 910249,
+    "category": "KYC & Anti-Money Laundering"
+  },
+  {
+    "doc_id": "RBI_PDF_067",
+    "filename": "2024-01-04_Circular_RBI-2023-2024-107 DOR.AML.REC.66-14.01.001-2023-24_Amendment to the Master Direction (MD) on KYC.pdf",
+    "path": "data/corpus/2024-01-04_Circular_RBI-2023-2024-107 DOR.AML.REC.66-14.01.001-2023-24_Amendment to the Master Direction (MD) on KYC.pdf",
+    "format": "pdf",
+    "source": "RBI Regulatory Archive (1991-2026)",
+    "size_bytes": 910249,
+    "category": "KYC & Anti-Money Laundering"
+  },
+  {
+    "doc_id": "RBI_PDF_068",
+    "filename": "2024-02-23_Circular_RBI-2023-2024-126 CO.DPSS.POLC.No.S1092-02-14-006-2023-2024_Amendment to Master Direction on Prepaid Payment Instruments.pdf",
+    "path": "data/corpus/2024-02-23_Circular_RBI-2023-2024-126 CO.DPSS.POLC.No.S1092-02-14-006-2023-2024_Amendment to Master Direction on Prepaid Payment Instruments.pdf",
+    "format": "pdf",
+    "source": "RBI Regulatory Archive (1991-2026)",
+    "size_bytes": 168907,
+    "category": "Payment & Settlement Systems"
+  },
+  {
+    "doc_id": "RBI_PDF_069",
+    "filename": "2024-03-07_Circular_DOR.RAUG.AUT.REC.No.81-24.01.041-2023-24_Amendment to the Master Direction - Credit Card and Debit Card - Issuance and Conduct Directions, 2022.pdf",
+    "path": "data/corpus/2024-03-07_Circular_DOR.RAUG.AUT.REC.No.81-24.01.041-2023-24_Amendment to the Master Direction - Credit Card and Debit Card - Issuance and Conduct Directions, 2022.pdf",
+    "format": "pdf",
+    "source": "RBI Regulatory Archive (1991-2026)",
+    "size_bytes": 1358048,
+    "category": "Prudential Norms & Capital Adequacy"
+  },
+  {
+    "doc_id": "RBI_PDF_070",
+    "filename": "2024-03-07_Circular_DoR.AUT.REC.No.27-24.01.041-2022-23_Master Direction - Credit Card and Debit Card - Issuance and Conduct Directions, 2022 (Updated as on 07-03-2024).pdf",
+    "path": "data/corpus/2024-03-07_Circular_DoR.AUT.REC.No.27-24.01.041-2022-23_Master Direction - Credit Card and Debit Card - Issuance and Conduct Directions, 2022 (Updated as on 07-03-2024).pdf",
+    "format": "pdf",
+    "source": "RBI Regulatory Archive (1991-2026)",
+    "size_bytes": 1718843,
+    "category": "Prudential Norms & Capital Adequacy"
+  },
+  {
+    "doc_id": "RBI_PDF_071",
+    "filename": "2024-03-07_Circular_RBI-2023-2024-132 DOR.RAUG.AUT.REC.No.81-24.01.041-2023-24_Amendment to the Master Direction - Credit Card and Debit Card \u2013 Issuance and Conduct Directions, 2022.pdf",
+    "path": "data/corpus/2024-03-07_Circular_RBI-2023-2024-132 DOR.RAUG.AUT.REC.No.81-24.01.041-2023-24_Amendment to the Master Direction - Credit Card and Debit Card \u2013 Issuance and Conduct Directions, 2022.pdf",
+    "format": "pdf",
+    "source": "RBI Regulatory Archive (1991-2026)",
+    "size_bytes": 1358048,
+    "category": "Prudential Norms & Capital Adequacy"
+  },
+  {
+    "doc_id": "RBI_PDF_072",
+    "filename": "2024-04-01_Circular_DOR.CAP.REC.5-09.18.201-2024-25_Master Circular - Prudential Norms on Capital Adequacy - Primary (Urban) Co-operative Banks (UCBs).pdf",
+    "path": "data/corpus/2024-04-01_Circular_DOR.CAP.REC.5-09.18.201-2024-25_Master Circular - Prudential Norms on Capital Adequacy - Primary (Urban) Co-operative Banks (UCBs).pdf",
+    "format": "pdf",
+    "source": "RBI Regulatory Archive (1991-2026)",
+    "size_bytes": 1502763,
+    "category": "Prudential Norms & Capital Adequacy"
+  },
+  {
+    "doc_id": "RBI_PDF_073",
+    "filename": "2024-04-01_Circular_RBI-2024-2025-09 DOR.CAP.REC.5-09.18.201-2024-25_Master Circular- Prudential Norms on Capital Adequacy - Primary (Urban) Co-operative Banks (UCBs).pdf",
+    "path": "data/corpus/2024-04-01_Circular_RBI-2024-2025-09 DOR.CAP.REC.5-09.18.201-2024-25_Master Circular- Prudential Norms on Capital Adequacy - Primary (Urban) Co-operative Banks (UCBs).pdf",
+    "format": "pdf",
+    "source": "RBI Regulatory Archive (1991-2026)",
+    "size_bytes": 1502763,
+    "category": "Prudential Norms & Capital Adequacy"
+  },
+  {
+    "doc_id": "RBI_PDF_074",
+    "filename": "2024-04-02_Circular_DOR.STR.REC.8-21.04.048-2024-25_Master Circular - Prudential Norms on Income Recognition, Asset Classification and Provisioning Pertaining to Advances.pdf",
+    "path": "data/corpus/2024-04-02_Circular_DOR.STR.REC.8-21.04.048-2024-25_Master Circular - Prudential Norms on Income Recognition, Asset Classification and Provisioning Pertaining to Advances.pdf",
+    "format": "pdf",
+    "source": "RBI Regulatory Archive (1991-2026)",
+    "size_bytes": 2583219,
+    "category": "Digital Banking, FinTech & Cyber Security"
+  },
+  {
+    "doc_id": "RBI_PDF_075",
+    "filename": "2024-04-02_Circular_RBI-2024-2025-12 DOR.STR.REC.8-21.04.048-2024-25_Master Circular - Prudential norms on Income Recognition, Asset Classification and Provisioning pertaining to Advances.pdf",
+    "path": "data/corpus/2024-04-02_Circular_RBI-2024-2025-12 DOR.STR.REC.8-21.04.048-2024-25_Master Circular - Prudential norms on Income Recognition, Asset Classification and Provisioning pertaining to Advances.pdf",
+    "format": "pdf",
+    "source": "RBI Regulatory Archive (1991-2026)",
+    "size_bytes": 2583219,
+    "category": "Digital Banking, FinTech & Cyber Security"
+  },
+  {
+    "doc_id": "RBI_PDF_076",
+    "filename": "2024-08-16_Circular_DoR.FIN.REC.35-03.10.124-2024-25_Review of Master Direction - Non-Banking Financial Company - Peer to Peer Lending Platform (Reserve Bank) Directions, 2017.pdf",
+    "path": "data/corpus/2024-08-16_Circular_DoR.FIN.REC.35-03.10.124-2024-25_Review of Master Direction - Non-Banking Financial Company - Peer to Peer Lending Platform (Reserve Bank) Directions, 2017.pdf",
+    "format": "pdf",
+    "source": "RBI Regulatory Archive (1991-2026)",
+    "size_bytes": 2270463,
+    "category": "General Banking Operations & Governance"
+  },
+  {
+    "doc_id": "RBI_PDF_077",
+    "filename": "2024-08-16_Circular_RBI-2024-2025-63 DoR.FIN.REC.35-03.10.124-2024-25_Review of Master Direction - Non-Banking Financial Company \u2013 Peer to Peer Lending Platform (Reserve Bank) Directions, 2017.pdf",
+    "path": "data/corpus/2024-08-16_Circular_RBI-2024-2025-63 DoR.FIN.REC.35-03.10.124-2024-25_Review of Master Direction - Non-Banking Financial Company \u2013 Peer to Peer Lending Platform (Reserve Bank) Directions, 2017.pdf",
+    "format": "pdf",
+    "source": "RBI Regulatory Archive (1991-2026)",
+    "size_bytes": 2270463,
+    "category": "General Banking Operations & Governance"
+  },
+  {
+    "doc_id": "RBI_PDF_078",
+    "filename": "2024-11-06_Circular_DBR.AML.BC.No.81-14.01.001-2015-16_Master Direction - Know Your Customer (KYC) Direction, 2016 (Updated as on 06-11-2024).pdf",
+    "path": "data/corpus/2024-11-06_Circular_DBR.AML.BC.No.81-14.01.001-2015-16_Master Direction - Know Your Customer (KYC) Direction, 2016 (Updated as on 06-11-2024).pdf",
+    "format": "pdf",
+    "source": "RBI Regulatory Archive (1991-2026)",
+    "size_bytes": 2049883,
+    "category": "KYC & Anti-Money Laundering"
+  },
+  {
+    "doc_id": "RBI_PDF_079",
+    "filename": "2024-11-06_Circular_DOR.AML.REC.49-14.01.001-2024-25_Amendment to the Master Direction - Know Your Customer (KYC) Direction, 2016.pdf",
+    "path": "data/corpus/2024-11-06_Circular_DOR.AML.REC.49-14.01.001-2024-25_Amendment to the Master Direction - Know Your Customer (KYC) Direction, 2016.pdf",
+    "format": "pdf",
+    "source": "RBI Regulatory Archive (1991-2026)",
+    "size_bytes": 1203190,
+    "category": "KYC & Anti-Money Laundering"
+  },
+  {
+    "doc_id": "RBI_PDF_080",
+    "filename": "2024-11-06_Circular_RBI-2024-2025-87 DOR.AML.REC.49-14.01.001-2024-25_Amendment to the Master Direction - Know Your Customer (KYC) Direction, 2016.pdf",
+    "path": "data/corpus/2024-11-06_Circular_RBI-2024-2025-87 DOR.AML.REC.49-14.01.001-2024-25_Amendment to the Master Direction - Know Your Customer (KYC) Direction, 2016.pdf",
+    "format": "pdf",
+    "source": "RBI Regulatory Archive (1991-2026)",
+    "size_bytes": 1203190,
+    "category": "KYC & Anti-Money Laundering"
+  },
+  {
+    "doc_id": "RBI_PDF_081",
+    "filename": "2024-12-16_Circular_DOR.No.RET.REC.32-12.01.001-2021-22_Master Direction - Reserve Bank of India [Cash Reserve Ratio (CRR) and Statutory Liquidity Ratio (SLR)] Directions - 2021 (Updated as on 16-.pdf",
+    "path": "data/corpus/2024-12-16_Circular_DOR.No.RET.REC.32-12.01.001-2021-22_Master Direction - Reserve Bank of India [Cash Reserve Ratio (CRR) and Statutory Liquidity Ratio (SLR)] Directions - 2021 (Updated as on 16-.pdf",
+    "format": "pdf",
+    "source": "RBI Regulatory Archive (1991-2026)",
+    "size_bytes": 2171572,
+    "category": "Digital Banking, FinTech & Cyber Security"
+  },
+  {
+    "doc_id": "RBI_PDF_082",
+    "filename": "2025-02-27_Circular_DNBR.(PD).090-03.10.124-2017-18_Master Direction - Non-Banking Financial Company - Peer to Peer Lending Platform (Reserve Bank) Directions, 2017 (Updated as on 27-02-2025).pdf",
+    "path": "data/corpus/2025-02-27_Circular_DNBR.(PD).090-03.10.124-2017-18_Master Direction - Non-Banking Financial Company - Peer to Peer Lending Platform (Reserve Bank) Directions, 2017 (Updated as on 27-02-2025).pdf",
+    "format": "pdf",
+    "source": "RBI Regulatory Archive (1991-2026)",
+    "size_bytes": 1489128,
+    "category": "General Banking Operations & Governance"
+  },
+  {
+    "doc_id": "RBI_PDF_083",
+    "filename": "2025-02-27_Circular_DNBR.PD.002-03.10.119-2016-17_Master Direction - Non-Banking Financial Companies Acceptance of Public Deposits (Reserve Bank) Directions, 2016 (Updated as on 27-02-2025).pdf",
+    "path": "data/corpus/2025-02-27_Circular_DNBR.PD.002-03.10.119-2016-17_Master Direction - Non-Banking Financial Companies Acceptance of Public Deposits (Reserve Bank) Directions, 2016 (Updated as on 27-02-2025).pdf",
+    "format": "pdf",
+    "source": "RBI Regulatory Archive (1991-2026)",
+    "size_bytes": 1174719,
+    "category": "Digital Banking, FinTech & Cyber Security"
+  },
+  {
+    "doc_id": "RBI_PDF_084",
+    "filename": "2025-04-01_Circular_DOR.CAP.REC.03-09.18.201-2025-26_Master Circular - Prudential Norms on Capital Adequacy - Primary (Urban) Co-operative Banks (UCBs).pdf",
+    "path": "data/corpus/2025-04-01_Circular_DOR.CAP.REC.03-09.18.201-2025-26_Master Circular - Prudential Norms on Capital Adequacy - Primary (Urban) Co-operative Banks (UCBs).pdf",
+    "format": "pdf",
+    "source": "RBI Regulatory Archive (1991-2026)",
+    "size_bytes": 1539342,
+    "category": "Prudential Norms & Capital Adequacy"
+  },
+  {
+    "doc_id": "RBI_PDF_085",
+    "filename": "2025-04-01_Circular_DOR.STR.REC.9-21.04.048-2025-26_Master Circular - Prudential Norms on Income Recognition, Asset Classification and Provisioning Pertaining to Advances.pdf",
+    "path": "data/corpus/2025-04-01_Circular_DOR.STR.REC.9-21.04.048-2025-26_Master Circular - Prudential Norms on Income Recognition, Asset Classification and Provisioning Pertaining to Advances.pdf",
+    "format": "pdf",
+    "source": "RBI Regulatory Archive (1991-2026)",
+    "size_bytes": 2630619,
+    "category": "Digital Banking, FinTech & Cyber Security"
+  },
+  {
+    "doc_id": "RBI_PDF_086",
+    "filename": "2025-04-01_Circular_RBI-2025-2026-09 DOR.CAP.REC.03-09.18.201-2025-26_Master Circular - Prudential Norms on Capital Adequacy - Primary (Urban) Co-operative Banks (UCBs).pdf",
+    "path": "data/corpus/2025-04-01_Circular_RBI-2025-2026-09 DOR.CAP.REC.03-09.18.201-2025-26_Master Circular - Prudential Norms on Capital Adequacy - Primary (Urban) Co-operative Banks (UCBs).pdf",
+    "format": "pdf",
+    "source": "RBI Regulatory Archive (1991-2026)",
+    "size_bytes": 1539342,
+    "category": "Prudential Norms & Capital Adequacy"
+  },
+  {
+    "doc_id": "RBI_PDF_087",
+    "filename": "2025-04-01_Circular_RBI-2025-2026-13 DOR.STR.REC.9-21.04.048-2025-26_Master Circular - Prudential norms on Income Recognition, Asset Classification and Provisioning pertaining to Advances.pdf",
+    "path": "data/corpus/2025-04-01_Circular_RBI-2025-2026-13 DOR.STR.REC.9-21.04.048-2025-26_Master Circular - Prudential norms on Income Recognition, Asset Classification and Provisioning pertaining to Advances.pdf",
+    "format": "pdf",
+    "source": "RBI Regulatory Archive (1991-2026)",
+    "size_bytes": 2630619,
+    "category": "Digital Banking, FinTech & Cyber Security"
+  },
+  {
+    "doc_id": "RBI_PDF_088",
+    "filename": "2025-04-23_Circular_DoR.FIN.REC.16-26.03.001-2024-25_Master Direction - Reserve Bank of India (Asset Reconstruction Companies) Directions, 2024 (Updated as on 23-04-2025).pdf",
+    "path": "data/corpus/2025-04-23_Circular_DoR.FIN.REC.16-26.03.001-2024-25_Master Direction - Reserve Bank of India (Asset Reconstruction Companies) Directions, 2024 (Updated as on 23-04-2025).pdf",
+    "format": "pdf",
+    "source": "RBI Regulatory Archive (1991-2026)",
+    "size_bytes": 1612079,
+    "category": "General Banking Operations & Governance"
+  },
+  {
+    "doc_id": "RBI_PDF_089",
+    "filename": "2025-05-05_Circular_DOR.FIN.HFC.CC.No.120-03.10.136-2020-21_Master Direction - Non-Banking Financial Company - Housing Finance Company (Reserve Bank) Directions, 2021 (Updated as on 05-05-2025).pdf",
+    "path": "data/corpus/2025-05-05_Circular_DOR.FIN.HFC.CC.No.120-03.10.136-2020-21_Master Direction - Non-Banking Financial Company - Housing Finance Company (Reserve Bank) Directions, 2021 (Updated as on 05-05-2025).pdf",
+    "format": "pdf",
+    "source": "RBI Regulatory Archive (1991-2026)",
+    "size_bytes": 2214765,
+    "category": "Priority Sector Lending & Financial Inclusion"
+  },
+  {
+    "doc_id": "RBI_PDF_090",
+    "filename": "2025-05-05_Circular_DoR(NBFC).PD.003-03.10.119-2016-17_Master Direction - Core Investment Companies (Reserve Bank) Directions, 2016 (Updated as on 05-05-2025).pdf",
+    "path": "data/corpus/2025-05-05_Circular_DoR(NBFC).PD.003-03.10.119-2016-17_Master Direction - Core Investment Companies (Reserve Bank) Directions, 2016 (Updated as on 05-05-2025).pdf",
+    "format": "pdf",
+    "source": "RBI Regulatory Archive (1991-2026)",
+    "size_bytes": 2110474,
+    "category": "Non-Banking Financial Companies (NBFCs)"
+  },
+  {
+    "doc_id": "RBI_PDF_091",
+    "filename": "2025-05-08_Circular_DOR.STR.REC.19-21.07.001-2025-26_Reserve Bank of India (Digital Lending) Directions, 2025.pdf",
+    "path": "data/corpus/2025-05-08_Circular_DOR.STR.REC.19-21.07.001-2025-26_Reserve Bank of India (Digital Lending) Directions, 2025.pdf",
+    "format": "pdf",
+    "source": "RBI Regulatory Archive (1991-2026)",
+    "size_bytes": 1120752,
+    "category": "Digital Banking, FinTech & Cyber Security"
+  },
+  {
+    "doc_id": "RBI_PDF_092",
+    "filename": "2025-05-08_Circular_RBI-2025-2026-36 DOR.STR.REC.19-21.07.001-2025-26_Reserve Bank of India (Digital Lending) Directions, 2025.pdf",
+    "path": "data/corpus/2025-05-08_Circular_RBI-2025-2026-36 DOR.STR.REC.19-21.07.001-2025-26_Reserve Bank of India (Digital Lending) Directions, 2025.pdf",
+    "format": "pdf",
+    "source": "RBI Regulatory Archive (1991-2026)",
+    "size_bytes": 1120752,
+    "category": "Digital Banking, FinTech & Cyber Security"
+  },
+  {
+    "doc_id": "RBI_PPT_001",
+    "filename": "RBI_Presentation_Monetary_Policy_Framework_2024.pptx",
+    "path": "data/corpus/RBI_Presentation_Monetary_Policy_Framework_2024.pptx",
+    "format": "pptx",
+    "source": "RBI Executive Briefing Presentation",
+    "size_bytes": 61897,
+    "category": "Monetary Policy & Macroeconomics",
+    "slides_count": 4
+  },
+  {
+    "doc_id": "RBI_PPT_002",
+    "filename": "RBI_Presentation_Scale_Based_Regulation_NBFCs.pptx",
+    "path": "data/corpus/RBI_Presentation_Scale_Based_Regulation_NBFCs.pptx",
+    "format": "pptx",
+    "source": "RBI Executive Briefing Presentation",
+    "size_bytes": 67743,
+    "category": "Non-Banking Financial Companies (NBFCs)",
+    "slides_count": 3
+  },
+  {
+    "doc_id": "RBI_PPT_003",
+    "filename": "RBI_Presentation_Basel_III_Capital_Regulations.pptx",
+    "path": "data/corpus/RBI_Presentation_Basel_III_Capital_Regulations.pptx",
+    "format": "pptx",
+    "source": "RBI Executive Briefing Presentation",
+    "size_bytes": 61703,
+    "category": "Prudential Norms & Capital Adequacy",
+    "slides_count": 3
+  },
+  {
+    "doc_id": "RBI_PPT_004",
+    "filename": "RBI_Presentation_Digital_Lending_Guidelines.pptx",
+    "path": "data/corpus/RBI_Presentation_Digital_Lending_Guidelines.pptx",
+    "format": "pptx",
+    "source": "RBI Executive Briefing Presentation",
+    "size_bytes": 74697,
+    "category": "Digital Banking, FinTech & Cyber Security",
+    "slides_count": 3
+  },
+  {
+    "doc_id": "RBI_PPT_005",
+    "filename": "RBI_Presentation_Central_Bank_Digital_Currency.pptx",
+    "path": "data/corpus/RBI_Presentation_Central_Bank_Digital_Currency.pptx",
+    "format": "pptx",
+    "source": "RBI Executive Briefing Presentation",
+    "size_bytes": 76647,
+    "category": "Digital Banking, FinTech & Cyber Security",
+    "slides_count": 3
+  },
+  {
+    "doc_id": "RBI_PPT_006",
+    "filename": "RBI_Presentation_Green_Deposits_Climate_Risk.pptx",
+    "path": "data/corpus/RBI_Presentation_Green_Deposits_Climate_Risk.pptx",
+    "format": "pptx",
+    "source": "RBI Executive Briefing Presentation",
+    "size_bytes": 68659,
+    "category": "Green Finance & Climate Risk",
+    "slides_count": 3
+  },
+  {
+    "doc_id": "RBI_PPT_007",
+    "filename": "RBI_Presentation_Cyber_Security_Framework_Banks.pptx",
+    "path": "data/corpus/RBI_Presentation_Cyber_Security_Framework_Banks.pptx",
+    "format": "pptx",
+    "source": "RBI Executive Briefing Presentation",
+    "size_bytes": 80998,
+    "category": "Digital Banking, FinTech & Cyber Security",
+    "slides_count": 3
+  },
+  {
+    "doc_id": "RBI_PPT_008",
+    "filename": "RBI_Presentation_Priority_Sector_Lending_Targets.pptx",
+    "path": "data/corpus/RBI_Presentation_Priority_Sector_Lending_Targets.pptx",
+    "format": "pptx",
+    "source": "RBI Executive Briefing Presentation",
+    "size_bytes": 69420,
+    "category": "Priority Sector Lending & Financial Inclusion",
+    "slides_count": 3
+  },
+  {
+    "doc_id": "RBI_PPT_009",
+    "filename": "RBI_Presentation_KYC_Master_Directions_AML.pptx",
+    "path": "data/corpus/RBI_Presentation_KYC_Master_Directions_AML.pptx",
+    "format": "pptx",
+    "source": "RBI Executive Briefing Presentation",
+    "size_bytes": 59167,
+    "category": "KYC & Anti-Money Laundering",
+    "slides_count": 3
+  },
+  {
+    "doc_id": "RBI_PPT_010",
+    "filename": "RBI_Presentation_Payment_Vision_2025_Settlement.pptx",
+    "path": "data/corpus/RBI_Presentation_Payment_Vision_2025_Settlement.pptx",
+    "format": "pptx",
+    "source": "RBI Executive Briefing Presentation",
+    "size_bytes": 63742,
+    "category": "Payment & Settlement Systems",
+    "slides_count": 3
+  }
+]

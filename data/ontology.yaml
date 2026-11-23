@@ -1,0 +1,77 @@
+# Reserve Bank of India (RBI) Regulatory Metadata Ontology
+# Course: PCAM* ZG516 - Applied Generative AI
+
+ontology_name: "RBI_Regulatory_Corpus_Ontology"
+version: "1.2.0"
+governance_body: "Reserve Bank of India (RBI)"
+jurisdiction: "India"
+
+document_types:
+  master_direction:
+    code: "MD"
+    description: "Statutory directions issued under Section 35A of the Banking Regulation Act, 1949 or RBI Act, 1934."
+    authority: "High"
+    binding: true
+  master_circular:
+    code: "MC"
+    description: "Annual or periodic consolidation of all existing circulars on a specific banking operational subject."
+    authority: "High"
+    binding: true
+  circular_notification:
+    code: "CIR"
+    description: "Specific regulatory instructions, policy amendments, or ad-hoc compliance directives."
+    authority: "Standard"
+    binding: true
+  presentation_briefing:
+    code: "PPT"
+    description: "Executive presentation decks, policy briefings, and architecture flowcharts for central bank operations."
+    authority: "Informative / Analytical"
+    binding: false
+
+modalities:
+  text:
+    description: "Statutory provisions, definitions, operational guidelines, and legal clauses."
+    extraction_strategy: "Semantic paragraph chunking with section header preservation."
+    token_weight: 1.0
+  table:
+    description: "Quantitative regulatory tables (e.g. Basel capital ratios, NBFC SBR layers, provisioning rates, PSL limits)."
+    extraction_strategy: "Atomic Markdown table structure preserving column and header semantics."
+    token_weight: 1.35
+  image:
+    description: "Architectural flowcharts, policy rate corridors, liquidity timelines, and quantitative charts."
+    extraction_strategy: "Visual layout extraction with OCR transcript and contextual semantic captioning."
+    token_weight: 1.45
+
+domains:
+  - id: "monetary_policy"
+    title: "Monetary Policy & Macroeconomics"
+    keywords: ["repo rate", "reverse repo", "msf", "sdf", "crr", "slr", "cpi", "inflation targeting", "mpc"]
+  - id: "capital_adequacy"
+    title: "Prudential Norms & Capital Adequacy (Basel III)"
+    keywords: ["car", "crar", "cet1", "tier 1", "ccb", "rwa", "countercyclical", "leverage ratio"]
+  - id: "nbfc_regulation"
+    title: "Non-Banking Financial Companies (NBFCs)"
+    keywords: ["scale based regulation", "sbr", "base layer", "middle layer", "upper layer", "nbfc-d"]
+  - id: "digital_lending"
+    title: "Digital Banking & FinTech Regulations"
+    keywords: ["digital lending", "lsp", "kfs", "apr", "cooling off", "fldg", "dlg", "pass through"]
+  - id: "green_finance"
+    title: "Green Finance & Climate Risk"
+    keywords: ["green deposits", "climate risk", "renewable energy", "igbc", "griha", "sustainability"]
+  - id: "cyber_security"
+    title: "Cyber Security Framework & IT Governance"
+    keywords: ["c-soc", "vapt", "incident reporting", "csiteg", "outsourcing", "is audit"]
+  - id: "priority_sector"
+    title: "Priority Sector Lending & Financial Inclusion"
+    keywords: ["psl", "anbc", "small and marginal farmers", "microenterprises", "pslc", "weaker sections"]
+  - id: "kyc_aml"
+    title: "KYC & Anti-Money Laundering"
+    keywords: ["kyc", "aml", "cft", "v-cip", "pep", "cdd", "risk categorization"]
+  - id: "payment_settlement"
+    title: "Payment & Settlement Systems"
+    keywords: ["payment vision 2025", "upi", "rtgs", "neft", "tokenization", "payment aggregator"]
+
+prompt_routing_rules:
+  table_priority_keywords: ["ratio", "percentage", "rate", "threshold", "capital", "limit", "bps", "spread"]
+  image_priority_keywords: ["corridor", "diagram", "chart", "workflow", "process flow", "architecture", "timeline"]
+  strict_grounding_clause: "Answer strictly based on cited RBI circulars and slides. If evidence is absent, declare refusal."

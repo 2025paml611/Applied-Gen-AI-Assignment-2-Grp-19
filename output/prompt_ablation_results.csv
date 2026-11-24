@@ -1,0 +1,6 @@
+variant_name,estimated_input_tokens,p50_latency_sec,p95_latency_sec,correctness_f1,faithfulness_score
+Zero-Shot Baseline,91,0.82,1.11,0.72,0.78
+F-String Prompt,144,0.86,1.16,0.84,0.89
+Three-Shot Prompt,282,0.96,1.3,0.88,0.89
+Jinja2 + RBI Ontology,226,0.92,1.24,0.94,0.96
+CREATE Framework,204,0.9,1.22,0.93,0.96

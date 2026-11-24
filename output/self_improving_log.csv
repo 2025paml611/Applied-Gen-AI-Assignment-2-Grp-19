@@ -1,0 +1,4 @@
+iteration,change_made,dev_score,correctness_f1,citation_rate
+v1,Baseline zero-shot instruction with basic grounding requirement.,69.2,0.72,0.65
+v2,Critique: Added strict numerical rule for regulatory tables and exact keyword matching.,85.6,0.84,0.88
+v3,Critique: Added modality-aware instructions for diagram workflows and 2 bootstrapped edge-case examples.,95.0,0.93,0.98

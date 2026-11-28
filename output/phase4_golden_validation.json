@@ -1,14 +1,16 @@
 {
   "valid": true,
-  "total_cases": 35,
-  "valid_cases": 35,
+  "total_cases": 39,
+  "valid_cases": 39,
   "invalid_cases": [],
   "modality_breakdown": {
     "image": 10,
     "table": 12,
-    "text": 13
+    "text": 17
   },
   "category_breakdown": {
+    "adversarial": 2,
+    "edge": 2,
     "normal": 35
   },
   "provenance_missing": [

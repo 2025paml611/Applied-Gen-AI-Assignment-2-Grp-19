@@ -122,12 +122,12 @@ Duplicate `doc_name + page_or_slide` entries are counted once in the nDCG calcul
 | Source | Split | Timer coverage | n | Engine | P50 ms | P95 ms |
 |---|---|---|---|---|---|---|
 | Phase 2 snapshot | Full | search-only; no engine construction; no format_context | - | - | 101.100000 | 161.168000 |
-| Phase 2 temp rerun | Full | search-only; no engine construction; no format_context | - | - | 24.609000 | 36.484000 |
-| Phase 4 warm | Full | warm engine.search(use_memory=False); reranking included; no format_context | - | - | 24.14237501216121 | 36.83857520518359 |
+| Phase 2 temp rerun | Full | search-only; no engine construction; no format_context | - | - | 23.779000 | 35.267000 |
+| Phase 4 warm | Full | warm engine.search(use_memory=False); reranking included; no format_context | - | - | 23.71916701667942 | 36.10608309390953 |
 
 **Source:** `output/phase2_retrieval_metrics.json; output/phase4/run_logs/phase2_temp.json; output/phase4/e6_nonfunctional.csv`
 
-The committed snapshot and the Phase 2 rerun are reported for the full 35-case set only. The rerun is tied to commit `a289ba0a4bc48fa896d42672af23ec5d7f2c1093` recorded in `output/phase4/run_manifest.json`.
+The committed snapshot and the Phase 2 rerun are reported for the full 35-case set only. The rerun is tied to commit `daba503314a7a04d340cd9f50512c5ee3494b930` recorded in `output/phase4/run_manifest.json`.
 
 ### 10.2 Consistency and memory
 
@@ -180,8 +180,8 @@ The 19.0 and 14.3 characters-per-naive-token figures use character counts from e
 
 | Split | P50 ms | P95 ms | FR4 | Blocked calls | Checks timed | Blocked reasons |
 |---|---|---|---|---|---|---|
-| Full | 0.008542003342881799 | 0.014333589933812615 | PASS | 0 | DoSProtection.check(); InputGuardrails.validate_input | {} |
-| Heldout | 0.00937501317821443 | 0.018416496459394693 | PASS | 0 | DoSProtection.check(); InputGuardrails.validate_input | {} |
+| Full | 0.008542003342881799 | 0.014483017730526624 | PASS | 0 | DoSProtection.check(); InputGuardrails.validate_input | {} |
+| Heldout | 0.009042007150128484 | 0.01812604023143649 | PASS | 0 | DoSProtection.check(); InputGuardrails.validate_input | {} |
 
 **Source:** `output/phase4/e6_nonfunctional.csv`
 
@@ -256,15 +256,28 @@ python phase4/make_report_tables.py
 python -m pytest -q phase4/tests
 ```
 
-Commit: `a289ba0a4bc48fa896d42672af23ec5d7f2c1093`. Machine details are recorded in `output/phase4/run_logs/env.txt`.
+Commit: `daba503314a7a04d340cd9f50512c5ee3494b930`. Machine details are recorded in `output/phase4/run_logs/env.txt`.
 
 Checksums: `output/phase4/run_logs/checksums.txt`.
 
 ### pytest.log — last 15 lines
 
 ```text
-.............                                                            [100%]
-13 passed in 46.68s
+phase4/tests/test_evaluate_retrieval_only.py::test_guardrail_prompt_injection_and_oversized_inputs PASSED [  7%]
+phase4/tests/test_evaluate_retrieval_only.py::test_dos_protection_burst_triggers_block PASSED [ 15%]
+phase4/tests/test_evaluate_retrieval_only.py::test_retrieval_only_cli_end_to_end PASSED [ 23%]
+phase4/tests/test_evaluate_retrieval_only.py::test_retrieval_only_cli_writes_e3_and_failure_outputs PASSED [ 30%]
+phase4/tests/test_evaluate_retrieval_only.py::test_retrieval_only_cli_writes_e6_outputs PASSED [ 38%]
+phase4/tests/test_metrics.py::test_recall_at_k_hand_computed PASSED      [ 46%]
+phase4/tests/test_metrics.py::test_reciprocal_rank_hand_computed PASSED  [ 53%]
+phase4/tests/test_metrics.py::test_ndcg_at_k_hand_computed PASSED        [ 61%]
+phase4/tests/test_metrics.py::test_ndcg_does_not_double_count_duplicate_relevant_ids PASSED [ 69%]
+phase4/tests/test_metrics.py::test_ndcg_at_10_never_exceeds_one_for_duplicate_doc_page_ids PASSED [ 76%]
+phase4/tests/test_metrics.py::test_aggregate_metrics_and_modality_breakdown PASSED [ 84%]
+phase4/tests/test_metrics.py::test_exact_two_sided_sign_test_hand_computed PASSED [ 92%]
+phase4/tests/test_metrics.py::test_empty_cases_are_zero_not_estimated PASSED [100%]
+
+============================= 13 passed in 44.65s ==============================
 ```
 
 The 13th test is `phase4/tests/test_metrics.py::test_empty_cases_are_zero_not_estimated`, which checks that an empty retrieval set produces zero metrics and no estimated values.
@@ -279,8 +292,8 @@ Full log: [`output/phase4/run_logs/pytest.log`](../output/phase4/run_logs/pytest
           "ndcg_at_10": 0.5
         }
       },
-      "p50_latency_ms": 24.499,
-      "p95_latency_ms": 37.482
+      "p50_latency_ms": 23.422,
+      "p95_latency_ms": 35.564
     }
   },
   "answer_level": {

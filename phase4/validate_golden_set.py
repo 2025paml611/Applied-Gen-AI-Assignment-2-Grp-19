@@ -32,10 +32,13 @@ def get_answer(case: dict[str, Any]) -> str:
     return str(case.get("expected_answer") or case.get("ground_truth_answer") or "")
 
 
-def validate_golden_set(golden_path: Path, parsed_path: Path) -> dict[str, Any]:
+def validate_golden_set(golden_path: Path, parsed_path: Path, edge_path: Path | None = None) -> dict[str, Any]:
     """Return validity summary, invalid cases, and coverage breakdowns."""
     cases = load_json(golden_path)
     parsed = load_json(parsed_path)
+    edge_cases = load_json(edge_path) if edge_path and edge_path.exists() else []
+    if isinstance(edge_cases, list):
+        cases = list(cases) + edge_cases
 
     if not isinstance(cases, list):
         return {"valid": False, "invalid_cases": [{"id": "<root>", "errors": ["golden set must be a JSON list"]}]}
@@ -76,21 +79,22 @@ def validate_golden_set(golden_path: Path, parsed_path: Path) -> dict[str, Any]:
             errors.append("missing expected answer (expected_answer or ground_truth_answer)")
         if modality not in VALID_MODALITIES:
             errors.append(f"invalid modality: {modality or '<missing>'}")
-        if not doc_name:
+        category = str(case.get("category") or "normal").strip().lower()
+        if not doc_name and category not in {"edge", "adversarial"}:
             errors.append("missing doc_name/source_doc")
 
         try:
             page_int = int(page)
         except (TypeError, ValueError):
             page_int = -1
-            errors.append("missing or invalid page_or_slide")
+            if doc_name or category not in {"edge", "adversarial"}:
+                errors.append("missing or invalid page_or_slide")
 
         if doc_name and doc_name not in source_pages:
             errors.append("source document not found in parsed_elements.json")
         elif doc_name and page_int not in source_pages[doc_name]:
             errors.append("source page_or_slide not found in parsed_elements.json")
 
-        category = str(case.get("category") or "normal").strip().lower()
         if category not in VALID_CATEGORIES:
             errors.append(f"invalid category: {category}")
 
@@ -133,10 +137,11 @@ def main() -> int:
     parser = argparse.ArgumentParser(description="Validate Phase 4 golden-set evidence")
     parser.add_argument("--golden", type=Path, default=Path("data/golden_set.json"))
     parser.add_argument("--parsed", type=Path, default=Path("data/parsed_elements.json"))
+    parser.add_argument("--edge-cases", type=Path, default=Path("data/phase4_edge_cases.json"))
     parser.add_argument("--output", type=Path)
     args = parser.parse_args()
 
-    result = validate_golden_set(args.golden, args.parsed)
+    result = validate_golden_set(args.golden, args.parsed, args.edge_cases)
     print(json.dumps(result, indent=2, ensure_ascii=False))
     if args.output:
         args.output.parent.mkdir(parents=True, exist_ok=True)

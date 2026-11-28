@@ -1,18 +1,19 @@
 metric,split,engine_mode,n,value,unit,status,reason,details
 retrieved_top10_identical,full,same_engine,5,100.0,percent,RUN,,top-10 element IDs and order; same engine across 5 runs
 retrieved_top10_identical,full,fresh_engine_per_run,5,100.0,percent,RUN,,top-10 element IDs and order; fresh engine across 5 runs
-retrieval_latency,full,retrieval_only,350,26.095583001733758,ms,RUN,,P50 retrieval search latency; not end-to-end
-retrieval_latency,full,retrieval_only,350,35.89723139011767,ms,RUN,,P95 retrieval search latency; not end-to-end
-phase2_equivalent_latency,full,retrieval_only,35,23.680792015511543,ms,RUN,,"P50 warm phase2-equivalent span: engine.search(use_memory=False), reranking included, no format_context"
-phase2_equivalent_latency,full,retrieval_only,35,37.158183087012716,ms,RUN,,"P95 warm phase2-equivalent span: engine.search(use_memory=False), reranking included, no format_context"
+retrieval_latency,full,retrieval_only,350,26.489125011721626,ms,RUN,,P50 retrieval search latency; not end-to-end
+retrieval_latency,full,retrieval_only,350,35.73391250974964,ms,RUN,,P95 retrieval search latency; not end-to-end
+phase2_equivalent_latency,full,retrieval_only,35,23.71916701667942,ms,RUN,,"P50 warm phase2-equivalent span: engine.search(use_memory=False), reranking included, no format_context"
+phase2_equivalent_latency,full,retrieval_only,35,36.10608309390953,ms,RUN,,"P95 warm phase2-equivalent span: engine.search(use_memory=False), reranking included, no format_context"
 context_tokens,full,retrieval_only,35,1977.5142857142857,tokens/query,RUN,,engine.format_context(top_k); tokenizer=regex-word-v1:unicode_alphanumeric_groups
 naive_top3_document_tokens,full,retrieval_only,35,59408.28571428572,tokens/query,RUN,,full text elements of all pages from top-3 documents; tokenizer=regex-word-v1:unicode_alphanumeric_groups
 context_to_naive_ratio,full,retrieval_only,35,0.09713088558489855,ratio,RUN,,mean context_tokens / naive_tokens
 context_to_naive_ratio,full,retrieval_only,35,0.07284913401609822,ratio,RUN,,median context_tokens / naive_tokens
 context_to_naive_ratio,full,retrieval_only,35,0.0045984813133669875,ratio,RUN,,minimum per-query context_tokens / naive_tokens
 context_to_naive_ratio,full,retrieval_only,35,0.8544520547945206,ratio,RUN,,maximum per-query context_tokens / naive_tokens
-guardrail_overhead,full,with_vs_without_input_guardrail,350,0.00854101381264627,ms,RUN,,P50 with guardrail minus no-call baseline; FR4 threshold is 6000 ms P95
-guardrail_overhead,full,with_vs_without_input_guardrail,350,0.014092086348682637,ms,PASS,,P95 with guardrail minus no-call baseline
+gs035_max_ratio_detail,full,retrieval_only,1,0.8544520547945206,ratio,RUN,,"{""context_tokens"": 1497, ""id"": ""GS_035"", ""naive_tokens"": 1752, ""question"": ""What is the target corridor fee for cross-border remittances under Payment Vision 2025?"", ""ratio"": 0.8544520547945206, ""top_documents"": [{""doc_name"": ""RBI_Presentation_Payment_Vision_2025_Settlement.pptx"", ""elements"": 5, ""modalities"": [""image"", ""table"", ""text""], ""naive_tokens"": 91, ""text_characters"": 1730}, {""doc_name"": ""2025-09-25_Master-Direction_12898_Reserve Bank of India (Authentication mechanisms for digital payment transactions) Directions, 2025.pdf"", ""elements"": 9, ""modalities"": [""image"", ""text""], ""naive_tokens"": 1526, ""text_characters"": 12397}, {""doc_name"": ""RBI_Presentation_Monetary_Policy_Framework_2024.pptx"", ""elements"": 6, ""modalities"": [""image"", ""table"", ""text""], ""naive_tokens"": 135, ""text_characters"": 1925}]}"
+guardrail_overhead,full,with_vs_without_input_guardrail,350,0.008542003342881799,ms,RUN,,P50 with guardrail minus no-call baseline; FR4 threshold is 6000 ms P95
+guardrail_overhead,full,with_vs_without_input_guardrail,350,0.014483017730526624,ms,PASS,,P95 with guardrail minus no-call baseline
 dos_blocked_calls,full,timed_guardrail_loop,350,0,calls,RUN,,{}
 memory_consistency,full,reused_engine_use_memory_true,5,100.0,percent,RUN,,memory-vs-no-memory changed rankings for 34/35 queries
 answer_consistency,full,llm_answer,0,0.0,percent,NOT_RUN,no LLM backend,answer generation unavailable
@@ -28,18 +29,19 @@ memory_recall_at_10,full,use_memory_true_seed_44,35,0.8285714285714286,ratio,RUN
 memory_mrr,full,use_memory_true_seed_44,35,0.4574489795918367,ratio,RUN,,memory enabled; order=seed_44
 retrieved_top10_identical,heldout,same_engine,5,100.0,percent,RUN,,top-10 element IDs and order; same engine across 5 runs
 retrieved_top10_identical,heldout,fresh_engine_per_run,5,100.0,percent,RUN,,top-10 element IDs and order; fresh engine across 5 runs
-retrieval_latency,heldout,retrieval_only,110,26.529791997745633,ms,RUN,,P50 retrieval search latency; not end-to-end
-retrieval_latency,heldout,retrieval_only,110,41.346704347233754,ms,RUN,,P95 retrieval search latency; not end-to-end
-phase2_equivalent_latency,heldout,retrieval_only,11,23.52504202281125,ms,RUN,,"P50 warm phase2-equivalent span: engine.search(use_memory=False), reranking included, no format_context"
-phase2_equivalent_latency,heldout,retrieval_only,11,36.72437500790693,ms,RUN,,"P95 warm phase2-equivalent span: engine.search(use_memory=False), reranking included, no format_context"
+retrieval_latency,heldout,retrieval_only,110,26.6215834999457,ms,RUN,,P50 retrieval search latency; not end-to-end
+retrieval_latency,heldout,retrieval_only,110,41.64643971744226,ms,RUN,,P95 retrieval search latency; not end-to-end
+phase2_equivalent_latency,heldout,retrieval_only,11,23.815250024199486,ms,RUN,,"P50 warm phase2-equivalent span: engine.search(use_memory=False), reranking included, no format_context"
+phase2_equivalent_latency,heldout,retrieval_only,11,35.6633335177321,ms,RUN,,"P95 warm phase2-equivalent span: engine.search(use_memory=False), reranking included, no format_context"
 context_tokens,heldout,retrieval_only,11,2049.909090909091,tokens/query,RUN,,engine.format_context(top_k); tokenizer=regex-word-v1:unicode_alphanumeric_groups
 naive_top3_document_tokens,heldout,retrieval_only,11,56127.818181818184,tokens/query,RUN,,full text elements of all pages from top-3 documents; tokenizer=regex-word-v1:unicode_alphanumeric_groups
 context_to_naive_ratio,heldout,retrieval_only,11,0.12869212632169072,ratio,RUN,,mean context_tokens / naive_tokens
 context_to_naive_ratio,heldout,retrieval_only,11,0.06241208262382468,ratio,RUN,,median context_tokens / naive_tokens
 context_to_naive_ratio,heldout,retrieval_only,11,0.009067756617512275,ratio,RUN,,minimum per-query context_tokens / naive_tokens
 context_to_naive_ratio,heldout,retrieval_only,11,0.8544520547945206,ratio,RUN,,maximum per-query context_tokens / naive_tokens
-guardrail_overhead,heldout,with_vs_without_input_guardrail,110,0.00929099041968584,ms,RUN,,P50 with guardrail minus no-call baseline; FR4 threshold is 6000 ms P95
-guardrail_overhead,heldout,with_vs_without_input_guardrail,110,0.018166989320889115,ms,PASS,,P95 with guardrail minus no-call baseline
+gs035_max_ratio_detail,heldout,retrieval_only,1,0.8544520547945206,ratio,RUN,,"{""context_tokens"": 1497, ""id"": ""GS_035"", ""naive_tokens"": 1752, ""question"": ""What is the target corridor fee for cross-border remittances under Payment Vision 2025?"", ""ratio"": 0.8544520547945206, ""top_documents"": [{""doc_name"": ""RBI_Presentation_Payment_Vision_2025_Settlement.pptx"", ""elements"": 5, ""modalities"": [""image"", ""table"", ""text""], ""naive_tokens"": 91, ""text_characters"": 1730}, {""doc_name"": ""2025-09-25_Master-Direction_12898_Reserve Bank of India (Authentication mechanisms for digital payment transactions) Directions, 2025.pdf"", ""elements"": 9, ""modalities"": [""image"", ""text""], ""naive_tokens"": 1526, ""text_characters"": 12397}, {""doc_name"": ""RBI_Presentation_Monetary_Policy_Framework_2024.pptx"", ""elements"": 6, ""modalities"": [""image"", ""table"", ""text""], ""naive_tokens"": 135, ""text_characters"": 1925}]}"
+guardrail_overhead,heldout,with_vs_without_input_guardrail,110,0.009042007150128484,ms,RUN,,P50 with guardrail minus no-call baseline; FR4 threshold is 6000 ms P95
+guardrail_overhead,heldout,with_vs_without_input_guardrail,110,0.01812604023143649,ms,PASS,,P95 with guardrail minus no-call baseline
 dos_blocked_calls,heldout,timed_guardrail_loop,110,0,calls,RUN,,{}
 memory_consistency,heldout,reused_engine_use_memory_true,5,100.0,percent,RUN,,memory-vs-no-memory changed rankings for 10/11 queries
 answer_consistency,heldout,llm_answer,0,0.0,percent,NOT_RUN,no LLM backend,answer generation unavailable

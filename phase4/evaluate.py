@@ -320,10 +320,17 @@ def run_e6(engine: RetrievalEngine, cases: list[dict], runs: int, top_k: int) ->
             top_doc_details = []
             for doc_name in top_documents:
                 doc_elements = [element for element in corpus_elements if element.get("doc_name") == doc_name]
+                text_elements = [
+                    str(element.get("content", "")) for element in doc_elements
+                    if str(element.get("modality", "text")).lower() == "text"
+                ]
+                if not text_elements:
+                    text_elements = [str(element.get("content", "")) for element in doc_elements]
                 top_doc_details.append({
                     "doc_name": doc_name,
                     "elements": len(doc_elements),
                     "text_characters": sum(len(str(element.get("content", ""))) for element in doc_elements),
+                    "naive_tokens": len(TOKEN_RE.findall("\n\n".join(text_elements))),
                     "modalities": sorted(set(str(element.get("modality", "text")) for element in doc_elements)),
                 })
             max_ratio_detail = {
@@ -657,6 +664,40 @@ def append_pair_loss_candidates(path: Path, split: str, losses: list[dict], text
             writer.writerow(record)
 
 
+def enrich_failure_candidates(path: Path, engine: RetrievalEngine, full_cases: list[dict], heldout_cases: list[dict], top_k: int) -> None:
+    """Add config-a and config-b top-3 details to every failure-candidate row."""
+    if not path.exists():
+        return
+    with path.open("r", newline="", encoding="utf-8-sig") as handle:
+        rows = list(csv.DictReader(handle))
+    fieldnames = list(rows[0].keys()) if rows else []
+    for prefix in ("text_top", "b_top"):
+        for index in (1, 2, 3):
+            for suffix in ("doc", "page", "modality"):
+                field = f"{prefix}{index}_{suffix}"
+                if field not in fieldnames:
+                    fieldnames.append(field)
+
+    cases_by_split = {"full": full_cases, "heldout": heldout_cases}
+    for row in rows:
+        split_cases = cases_by_split.get(row.get("split", ""), [])
+        case = next((item for item in split_cases if str(item.get("id")) == row["id"]), None)
+        if not case:
+            continue
+        text_results = engine.search(case["question"], top_k=top_k, modality="text", use_memory=False)
+        b_results = engine.search(case["question"], top_k=top_k, use_memory=False)
+        for prefix, results in (("text_top", text_results), ("b_top", b_results)):
+            for index, result in enumerate(results[:3], 1):
+                row[f"{prefix}{index}_doc"] = result.doc_name
+                row[f"{prefix}{index}_page"] = int(result.page_or_slide)
+                row[f"{prefix}{index}_modality"] = str(result.modality)
+
+    with path.open("w", newline="", encoding="utf-8") as handle:
+        writer = csv.DictWriter(handle, fieldnames=fieldnames)
+        writer.writeheader()
+        writer.writerows(rows)
+
+
 def write_e6_csv(path: Path, e6_results: dict[str, dict]) -> None:
     fieldnames = [
         "metric", "split", "engine_mode", "n", "value", "unit", "status", "reason", "details",
@@ -678,6 +719,7 @@ def write_e6_csv(path: Path, e6_results: dict[str, dict]) -> None:
                 ("context_to_naive_ratio", split_name, "retrieval_only", len(result.get("same_engine_query_rows", [])), result["median_ratio"], "ratio", "RUN", "", "median context_tokens / naive_tokens"),
                 ("context_to_naive_ratio", split_name, "retrieval_only", len(result.get("same_engine_query_rows", [])), result["min_ratio"], "ratio", "RUN", "", "minimum per-query context_tokens / naive_tokens"),
                 ("context_to_naive_ratio", split_name, "retrieval_only", len(result.get("same_engine_query_rows", [])), result["max_ratio"], "ratio", "RUN", "", "maximum per-query context_tokens / naive_tokens"),
+                ("gs035_max_ratio_detail", split_name, "retrieval_only", 1, result["max_ratio_detail"]["ratio"] if result["max_ratio_detail"] else 0.0, "ratio", "RUN", "", json.dumps(result["max_ratio_detail"], sort_keys=True) if result["max_ratio_detail"] else "NOT_AVAILABLE"),
                 ("guardrail_overhead", split_name, "with_vs_without_input_guardrail", result["retrieval_latency_count"], result["guardrail_p50_ms"], "ms", "RUN", "", "P50 with guardrail minus no-call baseline; FR4 threshold is 6000 ms P95"),
                 ("guardrail_overhead", split_name, "with_vs_without_input_guardrail", result["retrieval_latency_count"], result["guardrail_p95_ms"], "ms", "PASS" if result["guardrail_fr4_passed"] else "FAIL", "", "P95 with guardrail minus no-call baseline"),
                 ("dos_blocked_calls", split_name, "timed_guardrail_loop", result["retrieval_latency_count"], result["dos_blocked_calls"], "calls", "RUN", "", json.dumps(result["dos_block_reasons"], sort_keys=True)),
@@ -981,6 +1023,8 @@ def main() -> int:
             sections.append("\nDetailed per-modality metrics and n counts are reported in `e3_text_vs_multimodal.csv`.")
         e3_text = "".join(sections)
 
+    enrich_failure_candidates(failure_path, engine, selected_full, selected_heldout, args.top_k)
+
     e6_text = ""
     if args.e6:
         e6_results: dict[str, dict] = {}
@@ -989,6 +1033,13 @@ def main() -> int:
                 continue
             e6_results[split_name] = run_e6(engine, cases, args.runs, args.top_k)
         write_e6_csv(output_dir / "e6_nonfunctional.csv", e6_results)
+        log_dir = output_dir / "run_logs"
+        log_dir.mkdir(parents=True, exist_ok=True)
+        if "full" in e6_results:
+            (log_dir / "phase2_temp.json").write_text(
+                json.dumps(e6_results["full"]["phase2_temp_metrics"], indent=2) + "\n",
+                encoding="utf-8",
+            )
         e6_text = build_e6_section(e6_results)
 
     recorded = read_recorded_phase2(REPO_ROOT)

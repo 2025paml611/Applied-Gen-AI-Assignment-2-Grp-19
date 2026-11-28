@@ -125,6 +125,34 @@ The recorded run in `output/phase2_retrieval_metrics.json` evaluates 35 golden-s
 
 These are retrieval-only measurements from one environment and corpus snapshot. They do not measure answer-generation quality or latency. Rerun the benchmark after corpus or ranking changes.
 
+## Phase 4: Evaluation
+
+Validation:
+
+```powershell
+python phase4/validate_golden_set.py --edge-cases data/phase4_edge_cases.json --output output/phase4_golden_validation.json
+```
+
+Retrieval-only evaluation with E3 and E6:
+
+```powershell
+python phase4/evaluate.py --retrieval-only --e3 --e6 --runs 5 --top-k 10 --output-dir output/phase4
+```
+
+Generate report tables:
+
+```powershell
+python phase4/make_report_tables.py
+```
+
+Run Phase 4 tests:
+
+```powershell
+python -m pytest -q phase4/tests
+```
+
+Outputs are written under `output/phase4/`, including `retrieval_metrics.json`, `e3_text_vs_multimodal.csv`, `e6_nonfunctional.csv`, `failure_candidates.csv`, `run_manifest.json`, `phase4_summary.md`, and `run_logs/`. The group report is `docs/phase4_report.md`.
+
 ## Limitations
 
 - The retrieval engine builds its TF-IDF and BM25 indexes in memory at startup; it does not persist an index or use a hosted vector database.
@@ -133,3 +161,82 @@ These are retrieval-only measurements from one environment and corpus snapshot. 
 - Query memory is in-process and short-term. It is not persistent across application restarts.
 - Benchmark scores depend on the curated golden set and should be reviewed alongside per-question results in `output/phase2_retrieval_benchmark.csv`.
 - This README documents the implemented Part A prototype; it is not a substitute for the assignment report, design diagrams, contribution statement, demonstration, or the individual Part B deliverables.
+
+
+## Phase 4: Evaluation
+
+Phase 4 evaluates the RBI multimodal retrieval system at **retrieval level**. It doesn't change any Phase 2 or Phase 3 code. It reuses the Phase 2 retrieval engine and the Phase 3 guardrails and `PromptOptimizer` 70/30 split (seed 42).
+
+### What Phase 4 includes
+
+- **Retrieval evaluation** on the 35-case golden set (13 text, 12 table, 10 image): Recall@1/5/10, MRR and nDCG@10, overall and per modality, on the full set and the held-out split.
+- **E3: text-only vs full multimodal retrieval** (configs a and b) under two hit definitions (`doc_name + page_or_slide`, and the same plus a modality match), with per-case win/tie/loss counts and an exact two-sided sign test.
+- **E6: retrieval-level non-functional checks**: search latency (P50/P95), consistency with memory off and on, memory and query-order effects, context vs naive baseline token ratios, and input guardrail overhead and DoS (FR4) behaviour.
+- **Edge and adversarial case validation**: a separate set in `data/phase4_edge_cases.json` (2 edge, 2 adversarial), each with provenance and an expected outcome.
+- **Report generator**: `phase4/make_report_tables.py` builds every table in `docs/phase4_report.md` from the saved outputs and writes a numeric audit.
+
+### Requirements
+
+- Python 3.14 (tested on macOS arm64)
+- Dependencies from the existing `requirements.txt` (Phase 4 adds none)
+- Phase 2 index and parsed corpus already built (`data/parsed_elements.json` and the vector store)
+
+### Run order
+
+Run every command from the repository root, one at a time.
+
+```bash
+# 1. Validate the golden set and the edge/adversarial cases
+python3 phase4/validate_golden_set.py
+
+# 2. Run the retrieval-only evaluation with E3 and E6
+python3 phase4/evaluate.py --retrieval-only --e3 --e6 --runs 5 --top-k 10 --output-dir output/phase4 2>&1 | tee output/phase4/run_logs/evaluate.log
+
+# 3. Run the tests
+python3 -m pytest -v phase4/tests 2>&1 | tee output/phase4/run_logs/pytest.log
+
+# 4. Generate the report tables and the numeric audit
+python3 phase4/make_report_tables.py
+```
+
+### Key outputs
+
+| File | Written by | Contents |
+|---|---|---|
+| `output/phase4_golden_validation.json` | `validate_golden_set.py` | Case counts by modality and type, validation result, provenance check |
+| `output/phase4/retrieval_metrics.json` | `evaluate.py` | Recall@1/5/10, MRR, nDCG@10 (full and held-out, per modality) |
+| `output/phase4/per_case_results.csv` | `evaluate.py` | Per-case ranks, reciprocal rank and hits |
+| `output/phase4/e3_text_vs_multimodal.csv` | `evaluate.py --e3` | Config a vs b metrics, win/tie/loss, sign-test p-values |
+| `output/phase4/failure_candidates.csv` | `evaluate.py --e3` | Recall@10 misses, b-vs-a losses and lowest-RR hits, with top-3 results under a and b |
+| `output/phase4/e6_nonfunctional.csv` | `evaluate.py --e6` | Latency, consistency, memory order, token ratios (incl. GS_035 detail), guardrail overhead |
+| `output/phase4/run_manifest.json` | `evaluate.py` | Commit hash, seed, flags, environment, answer-level status |
+| `docs/phase4_report.md` | `make_report_tables.py` | Phase 4 report sections (§9–§12, appendices) |
+
+### Run logs (`output/phase4/run_logs/`)
+
+| File | Purpose |
+|---|---|
+| `evaluate.log` | Full console output of the evaluate run |
+| `pytest.log` | Full test output |
+| `env.txt` | Python version, OS and machine details |
+| `git_commit.txt` | Commit hash the run was made from |
+| `phase2_temp.json` | Phase 2 latency rerun on this machine (written by E6) |
+| `checksums.txt` | SHA-256 hashes of the output CSV and JSON files |
+| `report_numeric_audit.csv` | Every number in the report checked against its source file and field |
+
+### Interpretation notes
+
+- **Phase 4 is retrieval-only.** Answer-level metrics (correctness, faithfulness, citation accuracy, refusal accuracy, answer consistency, answer tokens, end-to-end latency, output guardrails) are reported as `NOT_RUN` because no LLM backend is configured.
+- **Config c (category filtering) is not evaluated.** None of the 35 golden-set cases has a category label.
+- **Config a can only score on text cases** under the modality-aware hit definition, so the a-vs-b comparison is also reported on text cases only.
+- **Edge and adversarial cases are kept separate** from the 35-case golden set. They test input guardrails through `InputGuardrails.validate_input()`, not retrieval quality.
+- **Latency depends on the machine.** Quote only numbers from the run tied to the commit in `run_manifest.json`.
+- **Token counts use a regex word counter** (`regex-word-v1`), not a model tokenizer.
+
+### Quick verification checklist
+
+- [ ] `python3 -m pytest -q phase4/tests` reports 13 passed.
+- [ ] The commit in `output/phase4/run_manifest.json` matches `git log -1`.
+- [ ] `output/phase4/run_logs/report_numeric_audit.csv` has no non-`MATCH` rows.
+- [ ] `shasum -a 256 -c` against `checksums.txt` succeeds for the output files.
+- [ ] `git diff --stat phase2 phase3` is empty.

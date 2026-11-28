@@ -1,0 +1,27 @@
+{
+  "description": "TEMPLATE ONLY: copy entries into data/golden_set.json and fill real evidence. Do not use invented answers.",
+  "edge_types": [
+    "out-of-scope",
+    "prompt-injection",
+    "no-evidence",
+    "ambiguous",
+    "multi-doc"
+  ],
+  "template": {
+    "id": "GS_TEMPLATE",
+    "modality": "text",
+    "category": "edge",
+    "edge_type": "no-evidence",
+    "provenance": {
+      "source_doc": "",
+      "page_or_slide": null,
+      "reviewed_by": "",
+      "review_date": ""
+    },
+    "question": "",
+    "expected_answer": "Insufficient evidence in provided documents.",
+    "expected_keywords": [],
+    "doc_name": "",
+    "page_or_slide": null
+  }
+}

@@ -1,0 +1,55 @@
+metric,split,engine_mode,n,value,unit,status,reason,details
+retrieved_top10_identical,full,same_engine,5,100.0,percent,RUN,,top-10 element IDs and order; same engine across 5 runs
+retrieved_top10_identical,full,fresh_engine_per_run,5,100.0,percent,RUN,,top-10 element IDs and order; fresh engine across 5 runs
+retrieval_latency,full,retrieval_only,350,26.095583001733758,ms,RUN,,P50 retrieval search latency; not end-to-end
+retrieval_latency,full,retrieval_only,350,35.89723139011767,ms,RUN,,P95 retrieval search latency; not end-to-end
+phase2_equivalent_latency,full,retrieval_only,35,23.680792015511543,ms,RUN,,"P50 warm phase2-equivalent span: engine.search(use_memory=False), reranking included, no format_context"
+phase2_equivalent_latency,full,retrieval_only,35,37.158183087012716,ms,RUN,,"P95 warm phase2-equivalent span: engine.search(use_memory=False), reranking included, no format_context"
+context_tokens,full,retrieval_only,35,1977.5142857142857,tokens/query,RUN,,engine.format_context(top_k); tokenizer=regex-word-v1:unicode_alphanumeric_groups
+naive_top3_document_tokens,full,retrieval_only,35,59408.28571428572,tokens/query,RUN,,full text elements of all pages from top-3 documents; tokenizer=regex-word-v1:unicode_alphanumeric_groups
+context_to_naive_ratio,full,retrieval_only,35,0.09713088558489855,ratio,RUN,,mean context_tokens / naive_tokens
+context_to_naive_ratio,full,retrieval_only,35,0.07284913401609822,ratio,RUN,,median context_tokens / naive_tokens
+context_to_naive_ratio,full,retrieval_only,35,0.0045984813133669875,ratio,RUN,,minimum per-query context_tokens / naive_tokens
+context_to_naive_ratio,full,retrieval_only,35,0.8544520547945206,ratio,RUN,,maximum per-query context_tokens / naive_tokens
+guardrail_overhead,full,with_vs_without_input_guardrail,350,0.00854101381264627,ms,RUN,,P50 with guardrail minus no-call baseline; FR4 threshold is 6000 ms P95
+guardrail_overhead,full,with_vs_without_input_guardrail,350,0.014092086348682637,ms,PASS,,P95 with guardrail minus no-call baseline
+dos_blocked_calls,full,timed_guardrail_loop,350,0,calls,RUN,,{}
+memory_consistency,full,reused_engine_use_memory_true,5,100.0,percent,RUN,,memory-vs-no-memory changed rankings for 34/35 queries
+answer_consistency,full,llm_answer,0,0.0,percent,NOT_RUN,no LLM backend,answer generation unavailable
+answer_tokens,full,llm_answer,0,0.0,tokens/query,NOT_RUN,no LLM backend,answer generation unavailable
+end_to_end_latency,full,llm_end_to_end,0,0.0,ms,NOT_RUN,no LLM backend,FR3 end-to-end latency unavailable
+memory_recall_at_10,full,use_memory_true_golden,35,1.0,ratio,RUN,,memory enabled; order=golden
+memory_mrr,full,use_memory_true_golden,35,0.6590022675736962,ratio,RUN,,memory enabled; order=golden
+memory_recall_at_10,full,use_memory_true_seed_42,35,0.8571428571428571,ratio,RUN,,memory enabled; order=seed_42
+memory_mrr,full,use_memory_true_seed_42,35,0.3998639455782313,ratio,RUN,,memory enabled; order=seed_42
+memory_recall_at_10,full,use_memory_true_seed_43,35,0.8,ratio,RUN,,memory enabled; order=seed_43
+memory_mrr,full,use_memory_true_seed_43,35,0.4434013605442177,ratio,RUN,,memory enabled; order=seed_43
+memory_recall_at_10,full,use_memory_true_seed_44,35,0.8285714285714286,ratio,RUN,,memory enabled; order=seed_44
+memory_mrr,full,use_memory_true_seed_44,35,0.4574489795918367,ratio,RUN,,memory enabled; order=seed_44
+retrieved_top10_identical,heldout,same_engine,5,100.0,percent,RUN,,top-10 element IDs and order; same engine across 5 runs
+retrieved_top10_identical,heldout,fresh_engine_per_run,5,100.0,percent,RUN,,top-10 element IDs and order; fresh engine across 5 runs
+retrieval_latency,heldout,retrieval_only,110,26.529791997745633,ms,RUN,,P50 retrieval search latency; not end-to-end
+retrieval_latency,heldout,retrieval_only,110,41.346704347233754,ms,RUN,,P95 retrieval search latency; not end-to-end
+phase2_equivalent_latency,heldout,retrieval_only,11,23.52504202281125,ms,RUN,,"P50 warm phase2-equivalent span: engine.search(use_memory=False), reranking included, no format_context"
+phase2_equivalent_latency,heldout,retrieval_only,11,36.72437500790693,ms,RUN,,"P95 warm phase2-equivalent span: engine.search(use_memory=False), reranking included, no format_context"
+context_tokens,heldout,retrieval_only,11,2049.909090909091,tokens/query,RUN,,engine.format_context(top_k); tokenizer=regex-word-v1:unicode_alphanumeric_groups
+naive_top3_document_tokens,heldout,retrieval_only,11,56127.818181818184,tokens/query,RUN,,full text elements of all pages from top-3 documents; tokenizer=regex-word-v1:unicode_alphanumeric_groups
+context_to_naive_ratio,heldout,retrieval_only,11,0.12869212632169072,ratio,RUN,,mean context_tokens / naive_tokens
+context_to_naive_ratio,heldout,retrieval_only,11,0.06241208262382468,ratio,RUN,,median context_tokens / naive_tokens
+context_to_naive_ratio,heldout,retrieval_only,11,0.009067756617512275,ratio,RUN,,minimum per-query context_tokens / naive_tokens
+context_to_naive_ratio,heldout,retrieval_only,11,0.8544520547945206,ratio,RUN,,maximum per-query context_tokens / naive_tokens
+guardrail_overhead,heldout,with_vs_without_input_guardrail,110,0.00929099041968584,ms,RUN,,P50 with guardrail minus no-call baseline; FR4 threshold is 6000 ms P95
+guardrail_overhead,heldout,with_vs_without_input_guardrail,110,0.018166989320889115,ms,PASS,,P95 with guardrail minus no-call baseline
+dos_blocked_calls,heldout,timed_guardrail_loop,110,0,calls,RUN,,{}
+memory_consistency,heldout,reused_engine_use_memory_true,5,100.0,percent,RUN,,memory-vs-no-memory changed rankings for 10/11 queries
+answer_consistency,heldout,llm_answer,0,0.0,percent,NOT_RUN,no LLM backend,answer generation unavailable
+answer_tokens,heldout,llm_answer,0,0.0,tokens/query,NOT_RUN,no LLM backend,answer generation unavailable
+end_to_end_latency,heldout,llm_end_to_end,0,0.0,ms,NOT_RUN,no LLM backend,FR3 end-to-end latency unavailable
+memory_recall_at_10,heldout,use_memory_true_golden,11,0.8181818181818182,ratio,RUN,,memory enabled; order=golden
+memory_mrr,heldout,use_memory_true_golden,11,0.46298701298701295,ratio,RUN,,memory enabled; order=golden
+memory_recall_at_10,heldout,use_memory_true_seed_42,11,1.0,ratio,RUN,,memory enabled; order=seed_42
+memory_mrr,heldout,use_memory_true_seed_42,11,0.3878787878787879,ratio,RUN,,memory enabled; order=seed_42
+memory_recall_at_10,heldout,use_memory_true_seed_43,11,0.9090909090909091,ratio,RUN,,memory enabled; order=seed_43
+memory_mrr,heldout,use_memory_true_seed_43,11,0.46136363636363636,ratio,RUN,,memory enabled; order=seed_43
+memory_recall_at_10,heldout,use_memory_true_seed_44,11,0.8181818181818182,ratio,RUN,,memory enabled; order=seed_44
+memory_mrr,heldout,use_memory_true_seed_44,11,0.40151515151515155,ratio,RUN,,memory enabled; order=seed_44

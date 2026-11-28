@@ -1,0 +1,150 @@
+{
+  "full": {
+    "query_count": 35,
+    "recall_at_1": 0.5428571428571428,
+    "recall_at_5": 0.9142857142857143,
+    "recall_at_10": 0.9428571428571428,
+    "mrr": 0.6893197278911565,
+    "ndcg_at_10": 0.7520941150658444,
+    "by_modality": {
+      "image": {
+        "query_count": 10,
+        "recall_at_1": 0.3,
+        "recall_at_5": 0.8,
+        "recall_at_10": 0.8,
+        "mrr": 0.47333333333333333,
+        "ndcg_at_10": 0.5535565121611998
+      },
+      "table": {
+        "query_count": 12,
+        "recall_at_1": 0.4166666666666667,
+        "recall_at_5": 0.9166666666666666,
+        "recall_at_10": 1.0,
+        "mrr": 0.6299603174603174,
+        "ndcg_at_10": 0.7213999293434249
+      },
+      "text": {
+        "query_count": 13,
+        "recall_at_1": 0.8461538461538461,
+        "recall_at_5": 1.0,
+        "recall_at_10": 1.0,
+        "mrr": 0.9102564102564104,
+        "ndcg_at_10": 0.9331484425824198
+      }
+    },
+    "p50_latency_ms": 23.42,
+    "p95_latency_ms": 33.262,
+    "modality_aware": {
+      "query_count": 35,
+      "recall_at_1": 0.3142857142857143,
+      "recall_at_5": 0.8285714285714286,
+      "recall_at_10": 0.8857142857142857,
+      "mrr": 0.5155102040816327,
+      "ndcg_at_10": 0.6068887864587836,
+      "by_modality": {
+        "image": {
+          "query_count": 10,
+          "recall_at_1": 0.1,
+          "recall_at_5": 0.6,
+          "recall_at_10": 0.6,
+          "mrr": 0.2733333333333333,
+          "ndcg_at_10": 0.3535565121611998
+        },
+        "table": {
+          "query_count": 12,
+          "recall_at_1": 0.4166666666666667,
+          "recall_at_5": 0.9166666666666666,
+          "recall_at_10": 1.0,
+          "mrr": 0.6299603174603174,
+          "ndcg_at_10": 0.7213999293434249
+        },
+        "text": {
+          "query_count": 13,
+          "recall_at_1": 0.38461538461538464,
+          "recall_at_5": 0.9230769230769231,
+          "recall_at_10": 1.0,
+          "mrr": 0.5961538461538461,
+          "ndcg_at_10": 0.6960571732557177
+        }
+      },
+      "p50_latency_ms": 23.42,
+      "p95_latency_ms": 33.262
+    }
+  },
+  "heldout": {
+    "query_count": 11,
+    "recall_at_1": 0.5454545454545454,
+    "recall_at_5": 1.0,
+    "recall_at_10": 1.0,
+    "mrr": 0.703030303030303,
+    "ndcg_at_10": 0.7759604656010908,
+    "by_modality": {
+      "image": {
+        "query_count": 3,
+        "recall_at_1": 0.3333333333333333,
+        "recall_at_5": 1.0,
+        "recall_at_10": 1.0,
+        "mrr": 0.4666666666666666,
+        "ndcg_at_10": 0.5912352048230277
+      },
+      "table": {
+        "query_count": 6,
+        "recall_at_1": 0.5,
+        "recall_at_5": 1.0,
+        "recall_at_10": 1.0,
+        "mrr": 0.7222222222222222,
+        "ndcg_at_10": 0.793643251190486
+      },
+      "text": {
+        "query_count": 2,
+        "recall_at_1": 1.0,
+        "recall_at_5": 1.0,
+        "recall_at_10": 1.0,
+        "mrr": 1.0,
+        "ndcg_at_10": 1.0
+      }
+    },
+    "p50_latency_ms": 23.386,
+    "p95_latency_ms": 35.935,
+    "modality_aware": {
+      "query_count": 11,
+      "recall_at_1": 0.36363636363636365,
+      "recall_at_5": 0.9090909090909091,
+      "recall_at_10": 0.9090909090909091,
+      "mrr": 0.5636363636363636,
+      "ndcg_at_10": 0.649882937670678,
+      "by_modality": {
+        "image": {
+          "query_count": 3,
+          "recall_at_1": 0.3333333333333333,
+          "recall_at_5": 0.6666666666666666,
+          "recall_at_10": 0.6666666666666666,
+          "mrr": 0.39999999999999997,
+          "ndcg_at_10": 0.46228426907818054
+        },
+        "table": {
+          "query_count": 6,
+          "recall_at_1": 0.5,
+          "recall_at_5": 1.0,
+          "recall_at_10": 1.0,
+          "mrr": 0.7222222222222222,
+          "ndcg_at_10": 0.793643251190486
+        },
+        "text": {
+          "query_count": 2,
+          "recall_at_1": 0.0,
+          "recall_at_5": 1.0,
+          "recall_at_10": 1.0,
+          "mrr": 0.3333333333333333,
+          "ndcg_at_10": 0.5
+        }
+      },
+      "p50_latency_ms": 23.386,
+      "p95_latency_ms": 35.935
+    }
+  },
+  "answer_level": {
+    "status": "NOT_RUN",
+    "reason": "no LLM backend configured"
+  }
+}

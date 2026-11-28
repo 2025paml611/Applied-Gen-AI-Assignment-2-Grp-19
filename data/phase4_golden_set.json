@@ -1,0 +1,440 @@
+{
+  "assignment": "E5 - Evaluation Golden Set",
+  "count": 30,
+  "automatic_evaluation": "Retrieval: source document and page/slide exact match in top-k",
+  "automatic_metrics": [
+    "Recall@k",
+    "MRR",
+    "P50/P95 latency"
+  ],
+  "failure_threshold": "Excluded from top 3 OR source/page not in top 10",
+  "agreement_analysis": "Compare automatic exact source/page hit with human judgment of answer relevance and evidence support",
+  "questions": [
+    {
+      "id": "GS_001",
+      "modality": "text",
+      "question": "What is the statutory headline inflation target prescribed for the Monetary Policy Committee under the amended RBI Act, 1934?",
+      "ground_truth_answer": "The statutory inflation target is 4.0% headline Consumer Price Index (CPI) combined inflation, with a tolerance band of +/- 2% (2.0% to 6.0%).",
+      "source_doc": "RBI_Presentation_Monetary_Policy_Framework_2024.pptx",
+      "page_or_slide": 2,
+      "expected_keywords": [
+        "4.0%",
+        "cpi",
+        "tolerance band",
+        "2%",
+        "6%"
+      ]
+    },
+    {
+      "id": "GS_002",
+      "modality": "table",
+      "question": "What is the spread of the Marginal Standing Facility (MSF) and Standing Deposit Facility (SDF) relative to the Policy Repo Rate?",
+      "ground_truth_answer": "The Marginal Standing Facility (MSF) is set at a spread of +25 bps (6.75%) above the repo rate, while the Standing Deposit Facility (SDF) is at a spread of -25 bps (6.25%) below the repo rate.",
+      "source_doc": "RBI_Presentation_Monetary_Policy_Framework_2024.pptx",
+      "page_or_slide": 3,
+      "expected_keywords": [
+        "msf",
+        "sdf",
+        "+25 bps",
+        "-25 bps",
+        "6.75%",
+        "6.25%"
+      ]
+    },
+    {
+      "id": "GS_003",
+      "modality": "image",
+      "question": "What is the total operational width of the RBI policy corridor and which rates define its upper and lower boundaries?",
+      "ground_truth_answer": "The RBI policy corridor has a total width of 50 basis points (bps), bounded at the upper end by the Marginal Standing Facility (MSF at 6.75%) and at the lower end by the Standing Deposit Facility (SDF at 6.25%).",
+      "source_doc": "RBI_Presentation_Monetary_Policy_Framework_2024.pptx",
+      "page_or_slide": 2,
+      "expected_keywords": [
+        "50 bps",
+        "corridor",
+        "msf",
+        "sdf",
+        "upper",
+        "lower"
+      ]
+    },
+    {
+      "id": "GS_004",
+      "modality": "text",
+      "question": "Under what condition is the Monetary Policy Committee considered to have failed in meeting its statutory inflation target?",
+      "ground_truth_answer": "Failure occurs if average headline CPI inflation exceeds the 6% upper tolerance limit or falls below the 2% lower tolerance limit for three consecutive quarters.",
+      "source_doc": "RBI_Presentation_Monetary_Policy_Framework_2024.pptx",
+      "page_or_slide": 2,
+      "expected_keywords": [
+        "three consecutive quarters",
+        "exceeds 6%",
+        "below 2%"
+      ]
+    },
+    {
+      "id": "GS_005",
+      "modality": "table",
+      "question": "Under the Scale Based Regulatory (SBR) framework for NBFCs, what is the asset size threshold separating the Base Layer from the Middle Layer?",
+      "ground_truth_answer": "The asset size threshold separating the Base Layer from the Middle Layer is Rs 1,000 crore. NBFCs with assets below Rs 1,000 crore are Base Layer, and those with assets of Rs 1,000 crore and above are Middle Layer.",
+      "source_doc": "RBI_Presentation_Scale_Based_Regulation_NBFCs.pptx",
+      "page_or_slide": 3,
+      "expected_keywords": [
+        "rs 1,000 crore",
+        "base layer",
+        "middle layer",
+        "threshold"
+      ]
+    },
+    {
+      "id": "GS_006",
+      "modality": "image",
+      "question": "According to the NBFC SBR asset threshold distribution diagram, what percentage of the regulatory spectrum does the Middle Layer represent?",
+      "ground_truth_answer": "The Middle Layer (assets >= Rs 1,000 crore) represents 45.0% of the asset distribution in the regulatory framework.",
+      "source_doc": "RBI_Presentation_Scale_Based_Regulation_NBFCs.pptx",
+      "page_or_slide": 2,
+      "expected_keywords": [
+        "45.0%",
+        "middle layer",
+        "distribution"
+      ]
+    },
+    {
+      "id": "GS_007",
+      "modality": "text",
+      "question": "What is the composition and role of the Top Layer (NBFC-TL) in the Scale Based Regulatory architecture?",
+      "ground_truth_answer": "The Top Layer is empty by default and populated only when the RBI perceives substantial increase in systemic risk from specific Upper Layer NBFCs, subjecting them to higher capital surcharges and intensive supervisory review.",
+      "source_doc": "RBI_Presentation_Scale_Based_Regulation_NBFCs.pptx",
+      "page_or_slide": 2,
+      "expected_keywords": [
+        "empty by default",
+        "systemic risk",
+        "top layer"
+      ]
+    },
+    {
+      "id": "GS_008",
+      "modality": "table",
+      "question": "What is the minimum prescribed Common Equity Tier 1 (CET1) and Total Capital (CRAR) requirement for commercial banks in India under RBI Basel III rules?",
+      "ground_truth_answer": "Under RBI Basel III rules, the minimum Common Equity Tier 1 (CET1) is 5.50% of Risk-Weighted Assets (8.00% including CCB), and the minimum Total Capital (CRAR) is 9.00% (11.50% including the 2.50% CCB).",
+      "source_doc": "RBI_Presentation_Basel_III_Capital_Regulations.pptx",
+      "page_or_slide": 3,
+      "expected_keywords": [
+        "5.50%",
+        "9.00%",
+        "11.50%",
+        "cet1",
+        "crar",
+        "ccb"
+      ]
+    },
+    {
+      "id": "GS_009",
+      "modality": "image",
+      "question": "What does the RBI Capital Ratio Minimums chart illustrate regarding the progression from Minimum CET1 to CRAR with Capital Conservation Buffer?",
+      "ground_truth_answer": "The chart illustrates a progressive capital staircase: Minimum CET1 at 5.5%, Tier 1 at 7.0%, Total CRAR at 9.0%, and Total CRAR + CCB reaching 11.5% of Risk-Weighted Assets.",
+      "source_doc": "RBI_Presentation_Basel_III_Capital_Regulations.pptx",
+      "page_or_slide": 2,
+      "expected_keywords": [
+        "5.5%",
+        "7.0%",
+        "9.0%",
+        "11.5%",
+        "progression",
+        "ccb"
+      ]
+    },
+    {
+      "id": "GS_011",
+      "modality": "text",
+      "question": "Under the RBI Digital Lending directions, are Lending Service Providers (LSPs) or FinTechs permitted to use pool or pass-through accounts for loan disbursals?",
+      "ground_truth_answer": "No. Pass-through and pool accounts are strictly prohibited. All loan disbursals and repayments must execute directly between the bank account of the borrower and the regulated entity without any third-party intermediary pool account.",
+      "source_doc": "RBI_Presentation_Digital_Lending_Guidelines.pptx",
+      "page_or_slide": 2,
+      "expected_keywords": [
+        "strictly prohibited",
+        "pass-through",
+        "pool account",
+        "direct"
+      ]
+    },
+    {
+      "id": "GS_012",
+      "modality": "table",
+      "question": "What is the regulatory cap imposed by RBI on Default Loss Guarantee (DLG) arrangements in digital lending?",
+      "ground_truth_answer": "The regulatory cap on Default Loss Guarantee (DLG) / First Loss Default Guarantee (FLDG) arrangements is strictly capped at a maximum of 5.0% of the total loan portfolio backed by such arrangements.",
+      "source_doc": "RBI_Presentation_Digital_Lending_Guidelines.pptx",
+      "page_or_slide": 3,
+      "expected_keywords": [
+        "5%",
+        "5.0%",
+        "default loss guarantee",
+        "dlg",
+        "portfolio"
+      ]
+    },
+    {
+      "id": "GS_013",
+      "modality": "image",
+      "question": "Outline the 4 sequential steps in the Digital Lending Regulatory Workflow diagram.",
+      "ground_truth_answer": "The 4 steps are: 1. RE Borrower Underwriting (credit assessment), 2. KFS Issuance & APR disclosure (all-inclusive rate consent), 3. Direct Bank Disbursal (no pool accounts), and 4. Direct Account Repayment (direct debit to RE loan account).",
+      "source_doc": "RBI_Presentation_Digital_Lending_Guidelines.pptx",
+      "page_or_slide": 2,
+      "expected_keywords": [
+        "re borrower underwriting",
+        "kfs issuance",
+        "direct bank disbursal",
+        "direct account repayment"
+      ]
+    },
+    {
+      "id": "GS_014",
+      "modality": "text",
+      "question": "What is a Key Fact Statement (KFS) in digital lending and what critical rate must it disclose?",
+      "ground_truth_answer": "A Key Fact Statement (KFS) is a standardized disclosure document that must be provided to the borrower prior to loan agreement execution, disclosing the all-inclusive Annual Percentage Rate (APR), recovery mechanisms, and cooling-off details.",
+      "source_doc": "RBI_Presentation_Digital_Lending_Guidelines.pptx",
+      "page_or_slide": 2,
+      "expected_keywords": [
+        "key fact statement",
+        "kfs",
+        "apr",
+        "annual percentage rate"
+      ]
+    },
+    {
+      "id": "GS_015",
+      "modality": "table",
+      "question": "How does Retail CBDC (e₹-R) differ from the Unified Payments Interface (UPI) regarding the nature of money and audit trails?",
+      "ground_truth_answer": "Retail CBDC is a direct central bank sovereign liability offering cash-like anonymity for low-value payments, whereas UPI is a transfer mechanism for commercial bank deposits with a full bank statement audit trail.",
+      "source_doc": "RBI_Presentation_Central_Bank_Digital_Currency.pptx",
+      "page_or_slide": 3,
+      "expected_keywords": [
+        "central bank liability",
+        "commercial bank deposit",
+        "anonymity",
+        "audit trail"
+      ]
+    },
+    {
+      "id": "GS_016",
+      "modality": "image",
+      "question": "According to the CBDC Operational Stakeholders architecture, what are the four balanced stakeholder groups?",
+      "ground_truth_answer": "The four balanced stakeholder groups (each holding a 25% share) are: 1. RBI (Issuer), 2. Banks (Distributors), 3. Merchants (Acquirers), and 4. Users (End Customers).",
+      "source_doc": "RBI_Presentation_Central_Bank_Digital_Currency.pptx",
+      "page_or_slide": 2,
+      "expected_keywords": [
+        "rbi (issuer)",
+        "banks (distributors)",
+        "merchants",
+        "users",
+        "25%"
+      ]
+    },
+    {
+      "id": "GS_017",
+      "modality": "text",
+      "question": "Why is the Central Bank Digital Currency (Digital Rupee) designed to be non-interest bearing?",
+      "ground_truth_answer": "The Digital Rupee is non-interest bearing to prevent bank disintermediation, ensuring commercial bank retail deposits are not destabilized by mass migrations into central bank tokens.",
+      "source_doc": "RBI_Presentation_Central_Bank_Digital_Currency.pptx",
+      "page_or_slide": 2,
+      "expected_keywords": [
+        "non-interest bearing",
+        "disintermediation",
+        "commercial bank deposits"
+      ]
+    },
+    {
+      "id": "GS_018",
+      "modality": "table",
+      "question": "Which energy sub-sectors are strictly on the exclusion list under the RBI Framework for Acceptance of Green Deposits?",
+      "ground_truth_answer": "Fossil fuel extraction and refining, and nuclear power generation facilities are strictly prohibited under the green deposit exclusion list.",
+      "source_doc": "RBI_Presentation_Green_Deposits_Climate_Risk.pptx",
+      "page_or_slide": 3,
+      "expected_keywords": [
+        "fossil fuel extraction",
+        "nuclear power",
+        "exclusion list"
+      ]
+    },
+    {
+      "id": "GS_019",
+      "modality": "image",
+      "question": "What is the indicative allocation percentage earmarked for Renewable Energy in the Green Deposit Allocation chart?",
+      "ground_truth_answer": "Renewable Energy is allocated 40% of the total green deposit proceeds in the allocation framework.",
+      "source_doc": "RBI_Presentation_Green_Deposits_Climate_Risk.pptx",
+      "page_or_slide": 2,
+      "expected_keywords": [
+        "40%",
+        "renewable energy",
+        "allocation"
+      ]
+    },
+    {
+      "id": "GS_020",
+      "modality": "text",
+      "question": "What is the mandatory governance and assurance requirement for banks issuing green deposits under RBI regulations?",
+      "ground_truth_answer": "Banks must implement a Board-approved financing policy for green deposits, conduct annual third-party independent verification of proceeds allocation, and publish an annual impact assessment report.",
+      "source_doc": "RBI_Presentation_Green_Deposits_Climate_Risk.pptx",
+      "page_or_slide": 2,
+      "expected_keywords": [
+        "board-approved",
+        "third-party independent verification",
+        "impact assessment"
+      ]
+    },
+    {
+      "id": "GS_021",
+      "modality": "table",
+      "question": "Within what mandatory timeframe must a commercial bank report a detected cyber security incident to the RBI CSITEG?",
+      "ground_truth_answer": "Any cyber security incident must be reported to RBI CSITEG within 2 to 6 hours of incident detection.",
+      "source_doc": "RBI_Presentation_Cyber_Security_Framework_Banks.pptx",
+      "page_or_slide": 3,
+      "expected_keywords": [
+        "2 to 6 hours",
+        "csiteg",
+        "cyber incident",
+        "detection"
+      ]
+    },
+    {
+      "id": "GS_022",
+      "modality": "image",
+      "question": "In the Cyber Incident Response Timeline diagram, what must be submitted within 7 days post-incident?",
+      "ground_truth_answer": "A comprehensive post-incident Root Cause Analysis (RCA) report must be finalized and submitted within 7 days.",
+      "source_doc": "RBI_Presentation_Cyber_Security_Framework_Banks.pptx",
+      "page_or_slide": 2,
+      "expected_keywords": [
+        "root cause analysis",
+        "rca",
+        "7 days"
+      ]
+    },
+    {
+      "id": "GS_023",
+      "modality": "text",
+      "question": "What is the operational requirement for Cyber Security Operations Centres (C-SOC) in commercial banks?",
+      "ground_truth_answer": "Banks must maintain a dedicated Cyber Security Operations Centre (C-SOC) that operates 24x7x365 with continuous real-time threat monitoring and incident response capabilities.",
+      "source_doc": "RBI_Presentation_Cyber_Security_Framework_Banks.pptx",
+      "page_or_slide": 2,
+      "expected_keywords": [
+        "24x7x365",
+        "c-soc",
+        "continuous monitoring"
+      ]
+    },
+    {
+      "id": "GS_024",
+      "modality": "table",
+      "question": "What is the overall Priority Sector Lending (PSL) target for domestic commercial banks as a percentage of Adjusted Net Bank Credit (ANBC)?",
+      "ground_truth_answer": "The overall Priority Sector Lending (PSL) target for domestic commercial banks is 40.0% of Adjusted Net Bank Credit (ANBC) or Credit Equivalent of Off-Balance Sheet Exposure (CEOBE).",
+      "source_doc": "RBI_Presentation_Priority_Sector_Lending_Targets.pptx",
+      "page_or_slide": 3,
+      "expected_keywords": [
+        "40.0%",
+        "anbc",
+        "priority sector lending",
+        "psl"
+      ]
+    },
+    {
+      "id": "GS_025",
+      "modality": "table",
+      "question": "What are the specific PSL sub-targets for Agriculture, Small and Marginal Farmers (SMF), and Weaker Sections for domestic commercial banks?",
+      "ground_truth_answer": "For domestic commercial banks, the sub-targets are: 18.0% of ANBC for Agriculture (of which 10.0% is for Small & Marginal Farmers), and 12.0% of ANBC for Weaker Sections.",
+      "source_doc": "RBI_Presentation_Priority_Sector_Lending_Targets.pptx",
+      "page_or_slide": 3,
+      "expected_keywords": [
+        "18.0%",
+        "10.0%",
+        "12.0%",
+        "agriculture",
+        "smf",
+        "weaker sections"
+      ]
+    },
+    {
+      "id": "GS_026",
+      "modality": "image",
+      "question": "According to the PSL Sub-Targets chart, what is the sub-target percentage allocated to Micro Enterprises?",
+      "ground_truth_answer": "The PSL sub-target for Micro Enterprises is 7.5% of Adjusted Net Bank Credit (ANBC).",
+      "source_doc": "RBI_Presentation_Priority_Sector_Lending_Targets.pptx",
+      "page_or_slide": 2,
+      "expected_keywords": [
+        "7.5%",
+        "micro enterprises",
+        "anbc"
+      ]
+    },
+    {
+      "id": "GS_027",
+      "modality": "text",
+      "question": "What are Priority Sector Lending Certificates (PSLC) and how do commercial banks trade them?",
+      "ground_truth_answer": "PSLCs are tradable financial instruments that allow banks with surplus priority sector lending achievements to sell certificates to banks with shortfalls via the RBI e-Kuber trading platform without credit risk transfer.",
+      "source_doc": "RBI_Presentation_Priority_Sector_Lending_Targets.pptx",
+      "page_or_slide": 2,
+      "expected_keywords": [
+        "pslc",
+        "e-kuber",
+        "certificates",
+        "trading",
+        "surplus"
+      ]
+    },
+    {
+      "id": "GS_028",
+      "modality": "table",
+      "question": "What is the mandatory KYC periodic updation cycle for High-risk, Medium-risk, and Low-risk customers under RBI Master Directions?",
+      "ground_truth_answer": "KYC periodic updation must be carried out at least once every 2 years for High-risk customers, every 8 years for Medium-risk customers, and every 10 years for Low-risk customers.",
+      "source_doc": "RBI_Presentation_KYC_Master_Directions_AML.pptx",
+      "page_or_slide": 3,
+      "expected_keywords": [
+        "2 years",
+        "8 years",
+        "10 years",
+        "high risk",
+        "medium risk",
+        "low risk"
+      ]
+    },
+    {
+      "id": "GS_029",
+      "modality": "image",
+      "question": "In the KYC Periodic Updation Cycle diagram, which customer risk category requires the shortest review interval of 2 years?",
+      "ground_truth_answer": "High-risk customers (including Politically Exposed Persons and high-net-worth accounts) require the shortest review interval of 2 years.",
+      "source_doc": "RBI_Presentation_KYC_Master_Directions_AML.pptx",
+      "page_or_slide": 2,
+      "expected_keywords": [
+        "high risk",
+        "2 years",
+        "pep"
+      ]
+    },
+    {
+      "id": "GS_030",
+      "modality": "text",
+      "question": "What is the Video Customer Identification Process (V-CIP) and what verification checks does it require under RBI KYC rules?",
+      "ground_truth_answer": "V-CIP is a remote video-based customer onboarding method requiring live facial liveness check, geo-tagging confirmation that the customer is physically inside India, and official validation with UIDAI or DigiLocker.",
+      "source_doc": "RBI_Presentation_KYC_Master_Directions_AML.pptx",
+      "page_or_slide": 2,
+      "expected_keywords": [
+        "v-cip",
+        "liveness check",
+        "geo-tagging",
+        "india",
+        "uidai"
+      ]
+    },
+    {
+      "id": "GS_032",
+      "modality": "image",
+      "question": "What transaction volume growth target is depicted for digital payments in the Payment Vision 2025 core goals chart?",
+      "ground_truth_answer": "The chart depicts a 3x transaction volume growth target for digital payments, expanding to over 12,000 crore transactions.",
+      "source_doc": "RBI_Presentation_Payment_Vision_2025_Settlement.pptx",
+      "page_or_slide": 2,
+      "expected_keywords": [
+        "3x",
+        "growth",
+        "12,000 crore",
+        "digital payments"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,51 @@
+{
+  "valid": true,
+  "total_cases": 35,
+  "valid_cases": 35,
+  "invalid_cases": [],
+  "modality_breakdown": {
+    "image": 10,
+    "table": 12,
+    "text": 13
+  },
+  "category_breakdown": {
+    "normal": 35
+  },
+  "provenance_missing": [
+    "GS_001",
+    "GS_002",
+    "GS_003",
+    "GS_004",
+    "GS_005",
+    "GS_006",
+    "GS_007",
+    "GS_008",
+    "GS_009",
+    "GS_010",
+    "GS_011",
+    "GS_012",
+    "GS_013",
+    "GS_014",
+    "GS_015",
+    "GS_016",
+    "GS_017",
+    "GS_018",
+    "GS_019",
+    "GS_020",
+    "GS_021",
+    "GS_022",
+    "GS_023",
+    "GS_024",
+    "GS_025",
+    "GS_026",
+    "GS_027",
+    "GS_028",
+    "GS_029",
+    "GS_030",
+    "GS_031",
+    "GS_032",
+    "GS_033",
+    "GS_034",
+    "GS_035"
+  ]
+}

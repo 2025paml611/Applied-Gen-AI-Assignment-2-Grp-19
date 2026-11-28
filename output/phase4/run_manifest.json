@@ -1,0 +1,26 @@
+{
+  "seed": 42,
+  "git_commit": "61fb05d113097fb7e7e17159c8d836d02538e4c3",
+  "python": "3.14.0",
+  "os": "macOS-26.6.2-arm64-arm-64bit-Mach-O",
+  "cpu": "arm",
+  "gpu": "NOT_PROBED",
+  "model": null,
+  "provider": null,
+  "temperature": null,
+  "top_k": 10,
+  "golden_set": "/Users/sonalgupta/PycharmProjects/Applied-Gen-AI-Assignment-2-Grp-19-3/data/golden_set.json",
+  "retrieval_only": true,
+  "answer_metrics": {
+    "status": "NOT_RUN",
+    "reason": "no LLM backend configured"
+  },
+  "split_source": "phase3/self_improving_loop.py:PromptOptimizer.test_set",
+  "full_case_count": 35,
+  "heldout_case_count": 11,
+  "heldout_modality_counts": {
+    "image": 3,
+    "table": 6,
+    "text": 2
+  }
+}
